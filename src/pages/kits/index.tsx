@@ -1,11 +1,12 @@
 import Layout from "@/components/Layout";
+import Link from "next/link";
 
 const voices = [
-	{ id: 1, title: "Contralto", image: "/images/contralto.png" },
-	{ id: 2, title: "Soprano", image: "/images/soprano.png" },
-	{ id: 3, title: "Tenor", image: "/images/tenor.png" },
-	{ id: 4, title: "Baixo", image: "/images/baixo.png" },
-	{ id: 5, title: "Todos", image: "/images/todos.png" },
+	{ id: 1, title: "Contralto", image: "/images/contralto.png", url: "contralto" },
+	{ id: 2, title: "Soprano", image: "/images/soprano.png", url: "soprano" },
+	{ id: 3, title: "Tenor", image: "/images/tenor.png", url: "tenor" },
+	{ id: 4, title: "Baixo", image: "/images/baixo.png", url: "baixo" },
+	{ id: 5, title: "Todos", image: "/images/todos.png", url: "todos" },
 ];
 
 export default function Kits() {
@@ -16,8 +17,9 @@ export default function Kits() {
 					<h2 className="text-3xl font-bold text-gray-50">Kits de Voz</h2>
 					<div className="flex flex-wrap gap-2">
 						{voices.map((voice, index) => (
-							<div
+							<Link
 								key={voice.id}
+								href={`/kits/${voice.url}`}
 								className={`bg-no-repeat bg-cover bg-center h-[120px] rounded-2xl overflow-hidden flex justify-center flex-grow`}
 								style={{
 									backgroundImage: `url(${voice.image})`,
@@ -27,7 +29,7 @@ export default function Kits() {
 								<div className="bg-black/60 h-full w-full p-6 flex justify-center items-center">
 									<p className="font-bold text-xl text-gray-50">{voice.title}</p>
 								</div>
-							</div>
+							</Link>
 						))}
 					</div>
 				</div>

@@ -1,0 +1,92 @@
+import Image from "next/image";
+import Layout from "@/components/Layout";
+import { CaretLeft } from "@phosphor-icons/react";
+import Link from "next/link";
+import { useParams } from "next/navigation";
+
+const songs = [
+	{
+		id: 1,
+		title: "Somos seus",
+		author: "Coral Universitário do Unasp-EC",
+		imageUrl:
+			"https://i.ytimg.com/vi/63GdOkub2aA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAA5AUcnr96fqTnD-VfodsSu1M8Tg",
+	},
+	{
+		id: 2,
+		title: "Somos seus",
+		author: "Coral Universitário do Unasp-EC",
+		imageUrl:
+			"https://i.ytimg.com/vi/63GdOkub2aA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAA5AUcnr96fqTnD-VfodsSu1M8Tg",
+	},
+	{
+		id: 3,
+		title: "Somos seus",
+		author: "Coral Universitário do Unasp-EC",
+		imageUrl:
+			"https://i.ytimg.com/vi/63GdOkub2aA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAA5AUcnr96fqTnD-VfodsSu1M8Tg",
+	},
+	{
+		id: 4,
+		title: "Somos seus",
+		author: "Coral Universitário do Unasp-EC",
+		imageUrl:
+			"https://i.ytimg.com/vi/63GdOkub2aA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAA5AUcnr96fqTnD-VfodsSu1M8Tg",
+	},
+	{
+		id: 5,
+		title: "Somos seus",
+		author: "Coral Universitário do Unasp-EC",
+		imageUrl:
+			"https://i.ytimg.com/vi/63GdOkub2aA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAA5AUcnr96fqTnD-VfodsSu1M8Tg",
+	},
+];
+
+export default function Musicas() {
+	const params = useParams();
+
+	const voice = params?.voz ?? "";
+
+	const formattedVoice = voice?.at(0)?.toUpperCase() + voice?.toString().substring(1);
+
+	return (
+		<Layout submenu>
+			<div className="h-full w-full content-center">
+				<div className="h-full w-full p-5 flex flex-col gap-4 rounded-3xl bg-gray-800">
+					<div className="w-full grid place-items-center">
+						<div className="w-full flex items-center justify-between">
+							<Link href="/kits">
+								<CaretLeft size={32} weight="bold" />
+							</Link>
+							<h2 className="w-full text-center text-3xl font-bold text-gray-50">Músicas</h2>
+							<div className="w-[32px]" />
+						</div>
+						<h3 className="text-xl text-gray-100">{formattedVoice}</h3>
+					</div>
+					<div className="h-full w-full flex flex-col gap-3">
+						{songs.map(song => (
+							<div key={song.id} className="bg-gray-700 w-full h-20 rounded-xl flex gap-2">
+								<Image
+									src={song.imageUrl}
+									alt={`Foto da Música ${song.title}`}
+									width={100}
+									height={80}
+									className="rounded-xl h-100 object-cover"
+								/>
+								<div>
+									<p className="text-xl text-gray-50">{song.title}</p>
+									<p className="text-xs text-gray-100 overflow-hidden text-ellipsis">{song.author}</p>
+								</div>
+
+								{/* <div
+									className={`bg-no-repeat bg-cover bg-center h-[100px] w-[80px] rounded-2xl overflow-hidden flex justify-center flex-grow`}
+								> */}
+								{/* </div> */}
+							</div>
+						))}
+					</div>
+				</div>
+			</div>
+		</Layout>
+	);
+}
