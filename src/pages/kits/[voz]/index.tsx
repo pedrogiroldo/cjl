@@ -65,24 +65,21 @@ export default function Musicas() {
 					</div>
 					<div className="h-full w-full flex flex-col gap-3">
 						{songs.map(song => (
-							<div key={song.id} className="bg-gray-700 w-full h-20 rounded-xl flex gap-2">
-								<Image
-									src={song.imageUrl}
-									alt={`Foto da Música ${song.title}`}
-									width={100}
-									height={80}
-									className="rounded-xl h-100 object-cover"
-								/>
-								<div>
-									<p className="text-xl text-gray-50">{song.title}</p>
-									<p className="text-xs text-gray-100 overflow-hidden text-ellipsis">{song.author}</p>
+							<Link key={song.id} href={`/kits/${voice}/${song.id}`}>
+								<div className="bg-gray-700 w-full h-20 rounded-xl flex gap-2">
+									<Image
+										src={song.imageUrl}
+										alt={`Foto da Música ${song.title}`}
+										width={100}
+										height={80}
+										className="rounded-xl h-100 object-cover"
+									/>
+									<div>
+										<p className="text-xl text-gray-50">{song.title}</p>
+										<p className="text-xs text-gray-100 overflow-hidden text-ellipsis">{song.author}</p>
+									</div>
 								</div>
-
-								{/* <div
-									className={`bg-no-repeat bg-cover bg-center h-[100px] w-[80px] rounded-2xl overflow-hidden flex justify-center flex-grow`}
-								> */}
-								{/* </div> */}
-							</div>
+							</Link>
 						))}
 					</div>
 				</div>
