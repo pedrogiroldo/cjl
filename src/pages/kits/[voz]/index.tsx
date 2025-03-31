@@ -7,38 +7,9 @@ import { useParams } from "next/navigation";
 const songs = [
 	{
 		id: 1,
-		title: "Somos seus",
+		title: "Somos irmãos",
 		author: "Coral Universitário do Unasp-EC",
-		imageUrl:
-			"https://i.ytimg.com/vi/63GdOkub2aA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAA5AUcnr96fqTnD-VfodsSu1M8Tg",
-	},
-	{
-		id: 2,
-		title: "Somos seus",
-		author: "Coral Universitário do Unasp-EC",
-		imageUrl:
-			"https://i.ytimg.com/vi/63GdOkub2aA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAA5AUcnr96fqTnD-VfodsSu1M8Tg",
-	},
-	{
-		id: 3,
-		title: "Somos seus",
-		author: "Coral Universitário do Unasp-EC",
-		imageUrl:
-			"https://i.ytimg.com/vi/63GdOkub2aA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAA5AUcnr96fqTnD-VfodsSu1M8Tg",
-	},
-	{
-		id: 4,
-		title: "Somos seus",
-		author: "Coral Universitário do Unasp-EC",
-		imageUrl:
-			"https://i.ytimg.com/vi/63GdOkub2aA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAA5AUcnr96fqTnD-VfodsSu1M8Tg",
-	},
-	{
-		id: 5,
-		title: "Somos seus",
-		author: "Coral Universitário do Unasp-EC",
-		imageUrl:
-			"https://i.ytimg.com/vi/63GdOkub2aA/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAA5AUcnr96fqTnD-VfodsSu1M8Tg",
+		imageUrl: "https://i.ytimg.com/vi/qjaZ_tL1Csk/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLDRLdo1jzj4FwZC8OBDeA5VLYp-OQ",
 	},
 ];
 
@@ -65,7 +36,7 @@ export default function Musicas() {
 					</div>
 					<div className="h-full w-full flex flex-col gap-3">
 						{songs.map(song => (
-							<Link key={song.id} href={`/kits/${voice}/${song.id}`}>
+							<Link key={song.id} href={voice && song.id ? `/kits/${voice}/${song.id}` : "/kits"}>
 								<div className="bg-gray-700 w-full h-20 rounded-xl flex gap-2">
 									<Image
 										src={song.imageUrl}
