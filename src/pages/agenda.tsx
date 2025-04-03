@@ -36,7 +36,8 @@ export default function Agenda() {
         {!loading && !error && (
           <div className="flex flex-col gap-4 w-full overflow-auto">
             {events.map((program) => {
-              const eventDate = new Date(program.date);
+              const eventDate = new Date(program.date + " 00:00:00");
+
               return (
                 <div
                   key={program.id}

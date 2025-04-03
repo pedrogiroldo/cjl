@@ -10,7 +10,7 @@ export default async function handler(
   try {
     const jsonDirectory = path.join(process.cwd(), "json");
     const fileContents = await fs.readFile(
-      path.join(jsonDirectory, "schedule.json"),
+      path.join(jsonDirectory, "agenda.json"),
       "utf8",
     );
 
@@ -26,6 +26,6 @@ export default async function handler(
 
     res.status(200).json({ events: futureEvents });
   } catch (error) {
-    res.status(500).json({ error: `Failed to read schedule.json: ${error}` });
+    res.status(500).json({ error: `Failed to read agenda.json: ${error}` });
   }
 }
