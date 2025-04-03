@@ -19,7 +19,10 @@ export default function Home() {
               Kits de Voz
             </button>
           </Link>
-          <Link href="/contato">
+          <Link
+            href="https://chat.whatsapp.com/DWsV6HbuUstDQ1ahZ1u7I9"
+            target="__blank"
+          >
             <button className="bg-secondary hover:bg-secondary text-white py-2 px-8 w-full md:w-max rounded-full">
               Contato
             </button>
