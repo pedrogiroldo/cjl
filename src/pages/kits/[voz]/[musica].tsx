@@ -108,7 +108,7 @@ export default function Song() {
     <Layout submenu title={song?.title + " | CJL"}>
       <div id="youtube-player" className="hidden" />
       <div className="h-full w-full flex flex-col content-center gap-4">
-        <div className="h-full w-full p-5 flex flex-col gap-3 rounded-3xl bg-gray-800">
+        <div className="h-full w-full p-5 flex flex-col gap-3 rounded-3xl bg-gray-800 overflow-hidden">
           <div className="w-full grid place-items-center">
             <div className="w-full flex items-center justify-between">
               <Link href={`/kits/${voice}`}>
@@ -123,14 +123,14 @@ export default function Song() {
               {formattedVoice}
             </h3>
           </div>
-          <div className="h-[60vh] w-full flex flex-col gap-3">
+          <div className="h-full w-full flex flex-col gap-3 pb-24">
             {song && (
               <TextReader lyrics={song.lyrics} currentTime={currentTime} />
             )}
           </div>
         </div>
 
-        <div className="h-full w-full p-5 rounded-3xl bg-gray-800">
+        <div className="w-full p-5 rounded-3xl bg-gray-800">
           <SongPlayer
             currentTime={currentTime}
             duration={duration}

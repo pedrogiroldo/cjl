@@ -27,9 +27,12 @@ export default function Document() {
         />
         <meta
           property="og:image"
-          content="https://cjl-two.vercel.app/images/logo-fundo.png"
+          content="https://https://coraljovemlondrina.com.br//images/logo-fundo.png"
         />
-        <meta property="og:url" content="https://cjl-two.vercel.app" />
+        <meta
+          property="og:url"
+          content="https://https://coraljovemlondrina.com.br/"
+        />
         <meta property="og:site_name" content="Coral Jovem de Londrina" />
 
         {/* Twitter Card Meta Tags */}
@@ -41,7 +44,7 @@ export default function Document() {
         />
         <meta
           name="twitter:image"
-          content="https://cjl-two.vercel.app/images/logo-fundo.png"
+          content="https://https://coraljovemlondrina.com.br//images/logo-fundo.png"
         />
 
         {/* Favicon */}
