@@ -5,13 +5,13 @@ const voices = [
   {
     id: 1,
     title: "Contralto",
-    image: "/images/contralto.png",
+    image: "/images/contralto.webp",
     url: "contralto",
   },
-  { id: 2, title: "Soprano", image: "/images/soprano.png", url: "soprano" },
-  { id: 3, title: "Tenor", image: "/images/tenor.png", url: "tenor" },
-  { id: 4, title: "Baixo", image: "/images/baixo.png", url: "baixo" },
-  { id: 5, title: "Todos", image: "/images/todos.png", url: "todos" },
+  { id: 2, title: "Soprano", image: "/images/soprano.webp", url: "soprano" },
+  { id: 3, title: "Tenor", image: "/images/tenor.webp", url: "tenor" },
+  { id: 4, title: "Baixo", image: "/images/baixo.webp", url: "baixo" },
+  { id: 5, title: "Todos", image: "/images/todos.webp", url: "todos" },
 ];
 
 export default function Kits() {

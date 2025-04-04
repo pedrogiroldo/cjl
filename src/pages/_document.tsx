@@ -27,7 +27,7 @@ export default function Document() {
         />
         <meta
           property="og:image"
-          content="https://https://coraljovemlondrina.com.br//images/logo-fundo.png"
+          content="https://https://coraljovemlondrina.com.br//images/logo-fundo.webp"
         />
         <meta
           property="og:url"
@@ -44,7 +44,7 @@ export default function Document() {
         />
         <meta
           name="twitter:image"
-          content="https://https://coraljovemlondrina.com.br//images/logo-fundo.png"
+          content="https://https://coraljovemlondrina.com.br//images/logo-fundo.webp"
         />
 
         {/* Favicon */}

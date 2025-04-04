@@ -27,7 +27,7 @@ function Layout({
   const router = useRouter();
 
   return (
-    <div className="h-screen bg-[url(/images/coral.png)] bg-no-repeat bg-cover bg-center">
+    <div className="h-screen bg-[url(/images/coral.webp)] bg-no-repeat bg-cover bg-center">
       <Head>
         <title>{title}</title>
       </Head>
@@ -37,7 +37,9 @@ function Layout({
             <header className="w-full flex justify-center">
               <Link href="/">
                 <Image
-                  src={submenu ? "/images/logo-branca.png" : "/images/logo.png"}
+                  src={
+                    submenu ? "/images/logo-branca.webp" : "/images/logo.webp"
+                  }
                   alt="Logo do Coral Jovem de Londrina"
                   className="w-auto"
                   style={{ height: submenu ? "28px" : "44px" }}
