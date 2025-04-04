@@ -17,3 +17,19 @@ export interface Event {
 export interface Agenda {
   events: Event[];
 }
+
+export interface Musica {
+  titulo: string;
+  autor: string;
+  imagem: string;
+  letra: Lyrics;
+  videos: Record<Naipes, string>;
+}
+
+enum Naipes {
+  soprano,
+  tenor,
+  contralto,
+  baixo,
+  todos,
+}

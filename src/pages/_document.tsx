@@ -6,8 +6,6 @@ export default function Document() {
       <Head>
         {/* Primary Meta Tags */}
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#ffffff" />
         <meta name="author" content="Coral Jovem de Londrina" />
         <meta
           name="description"

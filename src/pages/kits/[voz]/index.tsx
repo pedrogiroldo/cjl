@@ -7,10 +7,9 @@ import { useParams } from "next/navigation";
 const songs = [
   {
     id: 1,
-    title: "Somos irmãos",
-    author: "Coral Universitário do Unasp-EC",
-    imageUrl:
-      "https://i.ytimg.com/vi/qjaZ_tL1Csk/hq720.jpg?sqp=-…BACGAY4AUAB&rs=AOn4CLDRLdo1jzj4FwZC8OBDeA5VLYp-OQ",
+    title: "Nosso Deus",
+    author: "Chris Tomlin",
+    imageUrl: "/images/logo-fundo.webp",
   },
 ];
 
