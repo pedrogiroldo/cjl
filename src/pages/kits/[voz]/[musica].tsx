@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import SongPlayer from "@/components/SongPlayer";
 import TextReader from "@/components/TextReader";
 import { useLocalAudioPlayer } from "@/hooks/useLocalAudioPlayer";
-import { CaretLeft } from "@phosphor-icons/react";
+import { CaretLeft, Eye, EyeSlash } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -79,6 +79,7 @@ export default function Song() {
   const params = useParams();
 
   const [song, setSong] = useState<(typeof songs)[0]>();
+  const [enableReading, setEnableReading] = useState(true);
 
   const voice = params?.voz ?? "";
   const songId = Number(params?.musica ?? "");
@@ -96,7 +97,6 @@ export default function Song() {
 
   return (
     <Layout submenu title={song?.title + " | CJL"}>
-      {/* <div id="youtube-player" className="hidden" /> */}
       <div className="h-full w-full flex flex-col content-center gap-4">
         <div className="h-full w-full p-5 flex flex-col gap-3 rounded-3xl bg-gray-800 overflow-hidden">
           <div className="w-full grid place-items-center">
@@ -107,7 +107,11 @@ export default function Song() {
               <h2 className="w-full text-center text-3xl font-bold text-gray-50">
                 {song?.title}
               </h2>
-              <div className="w-[32px]" />
+              <div className="w-8">
+                <button onClick={() => setEnableReading((prev) => !prev)}>
+                  {enableReading ? <Eye size={28} /> : <EyeSlash size={28} />}
+                </button>
+              </div>
             </div>
             <h3 className="text-xl font-semibold text-gray-100">
               {formattedVoice}
@@ -115,7 +119,11 @@ export default function Song() {
           </div>
           <div className="h-full w-full flex flex-col gap-3 pb-24">
             {song && (
-              <TextReader lyrics={song.lyrics} currentTime={currentTime} />
+              <TextReader
+                lyrics={song.lyrics}
+                currentTime={currentTime}
+                enableReading={enableReading}
+              />
             )}
           </div>
         </div>

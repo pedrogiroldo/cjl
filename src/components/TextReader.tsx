@@ -4,19 +4,24 @@ import { useEffect, useRef } from "react";
 function TextReader({
   lyrics,
   currentTime,
+  enableReading = true,
 }: {
   lyrics: Lyrics;
   currentTime: number;
+  enableReading?: boolean;
 }) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const activeLineRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (activeLineRef.current && containerRef.current) {
-      containerRef.current.scrollTop =
-        activeLineRef.current.offsetTop - containerRef.current.clientHeight / 2;
+    if (enableReading) {
+      if (activeLineRef.current && containerRef.current) {
+        containerRef.current.scrollTop =
+          activeLineRef.current.offsetTop -
+          containerRef.current.clientHeight / 2;
+      }
     }
-  }, [currentTime, lyrics]);
+  }, [currentTime, lyrics, enableReading]);
 
   return (
     <div ref={containerRef} className="p-5 overflow-y-auto text-center">
@@ -31,7 +36,9 @@ function TextReader({
               ref={isActive ? activeLineRef : null}
               key={index}
               className={`transition-all duration-400 text-xl ${
-                isActive ? "font-bold text-primary" : "text-gray-50"
+                enableReading && isActive
+                  ? "font-bold text-primary"
+                  : "text-gray-50"
               }`}
             >
               {line.text}
