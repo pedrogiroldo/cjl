@@ -23,7 +23,7 @@ export default function Songs() {
     voice?.at(0)?.toUpperCase() + voice?.toString().substring(1);
 
   return (
-    <Layout submenu>
+    <Layout submenu title={`Músicas ${formattedVoice} | CJL`}>
       <div className="h-full w-full content-center">
         <div className="h-full w-full p-5 flex flex-col gap-4 rounded-3xl bg-gray-800">
           <div className="w-full grid place-items-center">

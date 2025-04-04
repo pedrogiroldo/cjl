@@ -16,7 +16,7 @@ const voices = [
 
 export default function Kits() {
   return (
-    <Layout>
+    <Layout title="Kits de Voz | CJL">
       <div className="h-full w-full content-center">
         <div className="w-full p-[20px] grid place-items-center gap-[16px] rounded-3xl bg-gray-800">
           <h2 className="text-3xl font-bold text-gray-50">Kits de Voz</h2>

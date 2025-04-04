@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { ReactNode } from "react";
+import Head from "next/head";
 
 const menuItems = [
   { title: "Home", icon: HouseSimple, link: "/" },
@@ -16,15 +17,20 @@ const menuItems = [
 
 function Layout({
   submenu = false,
+  title = "Coral Jovem de Londrina",
   children,
 }: {
   submenu?: boolean;
+  title?: string;
   children: ReactNode;
 }) {
   const router = useRouter();
 
   return (
     <div className="h-screen bg-[url(/images/coral.png)] bg-no-repeat bg-cover bg-center">
+      <Head>
+        <title>{title}</title>
+      </Head>
       <div className="bg-black/60 h-screen flex justify-center items-center">
         <div className="max-w-3xl container h-screen">
           <div className="w-full h-full p-5 flex flex-col items-center gap-5">

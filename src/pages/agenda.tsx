@@ -26,7 +26,7 @@ export default function Agenda() {
   }, []);
 
   return (
-    <Layout>
+    <Layout title="Agenda | CJL">
       <div className="w-full p-5 flex flex-col items-center gap-4 rounded-3xl bg-gray-800 max-h-full">
         <h2 className="text-3xl font-bold text-gray-50">Agenda</h2>
 

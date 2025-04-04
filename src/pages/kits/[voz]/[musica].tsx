@@ -105,7 +105,7 @@ export default function Song() {
   }, [songId]);
 
   return (
-    <Layout submenu>
+    <Layout submenu title={song?.title + " | CJL"}>
       <div id="youtube-player" className="hidden" />
       <div className="h-full w-full flex flex-col content-center gap-4">
         <div className="h-full w-full p-5 flex flex-col gap-3 rounded-3xl bg-gray-800">
