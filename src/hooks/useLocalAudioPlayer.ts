@@ -25,6 +25,13 @@ export function useLocalAudioPlayer(audioSrc: string) {
     }
   };
 
+  const updateCurrentTime = (newTime: number) => {
+    setCurrentTime(newTime);
+    if (audioRef.current) {
+      audioRef.current.currentTime = newTime;
+    }
+  };
+
   const handleVolumeChange = (newVolume: number) => {
     const vol = Math.max(0, Math.min(1, newVolume));
     setVolume(vol);
@@ -87,5 +94,6 @@ export function useLocalAudioPlayer(audioSrc: string) {
     handleSeek,
     handleVolumeChange,
     toggleMute,
+    updateCurrentTime,
   };
 }

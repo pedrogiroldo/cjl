@@ -5,13 +5,19 @@ function TextReader({
   lyrics,
   currentTime,
   enableReading = true,
+  updateCurrentTime,
 }: {
   lyrics: Lyrics;
   currentTime: number;
   enableReading?: boolean;
+  updateCurrentTime: (newTime: number) => void;
 }) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const activeLineRef = useRef<HTMLDivElement | null>(null);
+
+  const handleUpdateCurrentTime = (newTime: number) => {
+    updateCurrentTime(newTime);
+  };
 
   useEffect(() => {
     if (enableReading) {
@@ -28,6 +34,7 @@ function TextReader({
       <div className="flex flex-col gap-2">
         {lyrics.lines.map((line, index) => {
           const isActive =
+            enableReading &&
             currentTime >= line.time &&
             currentTime < (lyrics.lines[index + 1]?.time || Infinity);
 
@@ -36,10 +43,9 @@ function TextReader({
               ref={isActive ? activeLineRef : null}
               key={index}
               className={`transition-all duration-400 text-xl ${
-                enableReading && isActive
-                  ? "font-bold text-primary"
-                  : "text-gray-50"
+                isActive ? "font-bold text-primary" : "text-gray-50"
               }`}
+              onClick={() => handleUpdateCurrentTime(line.time)}
             >
               {line.text}
             </p>

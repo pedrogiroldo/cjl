@@ -84,8 +84,14 @@ export default function Song() {
   const voice = params?.voz ?? "";
   const songId = Number(params?.musica ?? "");
 
-  const { currentTime, duration, isPlaying, togglePlay, handleSeek } =
-    useLocalAudioPlayer(song?.musicPath + "/" + voice + ".mp3");
+  const {
+    currentTime,
+    duration,
+    isPlaying,
+    updateCurrentTime,
+    togglePlay,
+    handleSeek,
+  } = useLocalAudioPlayer(song?.musicPath + "/" + voice + ".mp3");
 
   const formattedVoice =
     voice?.at(0)?.toUpperCase() + voice?.toString().substring(1);
@@ -123,6 +129,7 @@ export default function Song() {
                 lyrics={song.lyrics}
                 currentTime={currentTime}
                 enableReading={enableReading}
+                updateCurrentTime={updateCurrentTime}
               />
             )}
           </div>
