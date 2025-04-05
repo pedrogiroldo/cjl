@@ -27,12 +27,12 @@ function Layout({
   const router = useRouter();
 
   return (
-    <div className="h-screen bg-[url(/images/coral.webp)] bg-no-repeat bg-cover bg-center">
+    <div className="min-h-screen bg-[url(/images/coral.webp)] bg-no-repeat bg-cover bg-center">
       <Head>
         <title>{title}</title>
       </Head>
-      <div className="bg-black/60 h-screen flex justify-center items-center">
-        <div className="max-w-3xl container h-screen">
+      <div className="bg-black/60 flex justify-center items-center">
+        <div className="max-w-3xl container">
           <div className="w-full h-full p-5 flex flex-col items-center gap-5">
             <header className="w-full flex justify-center">
               <Link href="/">
@@ -52,7 +52,7 @@ function Layout({
             <main className="flex-1 w-full flex overflow-auto">{children}</main>
 
             {!submenu && (
-              <footer className="w-full bg-gray-900 rounded-3xl flex">
+              <footer className="fixed bottom-6 w-3/4 z-50 bg-gray-900 rounded-3xl flex">
                 {menuItems.map((item) => {
                   const IconComponent = item.icon;
 
