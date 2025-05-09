@@ -6,80 +6,16 @@ import { CaretLeft, Eye, EyeSlash } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import { Song } from "@/types";
 
-const songs = [
-  {
-    id: 1,
-    title: "Nosso Deus",
-    author: "Chris Tomlin",
-    musicPath: "/songs/nosso-deus",
-    imageUrl: "/images/logo-fundo.webp",
-    lyrics: {
-      lines: [
-        { text: "Água em vinho tornou", time: 23 },
-        { text: "Os olhos dos cegos abriu", time: 27 },
-        { text: "Não há outro", time: 30 },
-        { text: "Igual a Deus", time: 35 },
-        { text: "Dentro da noite brilhou", time: 40 },
-        { text: "Das cinzas nos fez ressurgir", time: 45 },
-        { text: "Não há outro", time: 48 },
-        { text: "Igual a Deus", time: 53 },
-        { text: "Deus tu és grande, és invencível", time: 59 },
-        { text: "Estás acima de qualquer outro", time: 63 },
-        { text: "És Deus que cura, grande em poder", time: 67 },
-        { text: "Nosso Deus, nosso Deus.", time: 73 },
-        { text: "Dentro da noite brilhou", time: 86 },
-        { text: "Das cinzas nos fez ressurgir", time: 90 },
-        { text: "Não há outro", time: 94 },
-        { text: "Igual a Deus", time: 98 },
-
-        { text: "Deus tu és grande, és invencível", time: 105 },
-        { text: "Estás acima de qualquer outro", time: 108 },
-        { text: "És Deus que cura, grande em poder", time: 113 },
-        { text: "Nosso Deus, nosso Deus.", time: 117 },
-        { text: "Deus tu és grande, és invencível", time: 122 },
-        { text: "Estás acima de qualquer outro", time: 128 },
-        { text: "És Deus que cura, grande em poder", time: 132 },
-        { text: "Nosso Deus, nosso Deus.", time: 135 },
-
-        { text: "Se Deus está conosco", time: 159 },
-        { text: "Quem pode nos deter?", time: 161 },
-        { text: "Se Deus está conosco", time: 164 },
-        { text: "Não há o que temer", time: 166 },
-        { text: "Se Deus está conosco", time: 169 },
-        { text: "Quem pode nos deter?", time: 172 },
-        { text: "Se Deus está conosco", time: 174 },
-        { text: "Não há o que temer", time: 176 },
-        { text: "Não há o que temer", time: 184 },
-
-        { text: "Deus tu és grande, és invencível", time: 196 },
-        { text: "Estás acima de qualquer outro", time: 199 },
-        { text: "És Deus que cura, grande em poder", time: 204 },
-        { text: "Nosso Deus, nosso Deus.", time: 209 },
-        { text: "Deus tu és grande, és invencível", time: 214 },
-        { text: "Estás acima de qualquer outro", time: 220 },
-        { text: "És Deus que cura, grande em poder", time: 224 },
-        { text: "Nosso Deus, nosso Deus.", time: 227 },
-
-        { text: "Se Deus está conosco", time: 232 },
-        { text: "Quem pode nos deter?", time: 234 },
-        { text: "Se Deus está conosco", time: 237 },
-        { text: "Não há o que temer", time: 239 },
-        { text: "Se Deus está conosco", time: 242 },
-        { text: "Quem pode nos deter?", time: 244 },
-        { text: "Se Deus está conosco", time: 246 },
-        { text: "Não há o que temer", time: 248 },
-        { text: "Não há o que temer", time: 258 },
-      ],
-    },
-  },
-];
-
-export default function Song() {
+export default function Musica() {
   const params = useParams();
 
-  const [song, setSong] = useState<(typeof songs)[0]>();
+  const [song, setSong] = useState<Song>();
   const [enableReading, setEnableReading] = useState(true);
+
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   const voice = params?.voz ?? "";
   const songId = Number(params?.musica ?? "");
@@ -97,8 +33,28 @@ export default function Song() {
     voice?.at(0)?.toUpperCase() + voice?.toString().substring(1);
 
   useEffect(() => {
-    const song = songs.find((s) => s.id === songId);
-    setSong(song);
+    const fetchMusica = async () => {
+      try {
+        setLoading(true);
+
+        const response = await fetch(`/api/musicas/${songId}`);
+        if (!response.ok) {
+          throw new Error("Música não encontrada");
+        }
+        const data: Song = await response.json();
+        setSong(data);
+
+        setError(null);
+      } catch (error) {
+        setError((error as Error).message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    if (songId) {
+      fetchMusica();
+    }
   }, [songId]);
 
   return (
@@ -124,6 +80,10 @@ export default function Song() {
             </h3>
           </div>
           <div className="h-full w-full flex flex-col gap-3 pb-24">
+            <div className="text-center">
+              {loading && <p className="text-gray-50">Carregando...</p>}
+              {error && <p className="text-red-500">{error}</p>}
+            </div>
             {song && (
               <TextReader
                 lyrics={song.lyrics}

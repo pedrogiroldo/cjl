@@ -18,15 +18,16 @@ export interface Agenda {
   events: Event[];
 }
 
-export interface Musica {
-  titulo: string;
-  autor: string;
-  imagem: string;
-  letra: Lyrics;
-  videos: Record<Naipes, string>;
+export interface Song {
+  id: number;
+  title: string;
+  author: string;
+  musicPath: string;
+  imageUrl: string;
+  lyrics: Lyrics;
 }
 
-enum Naipes {
+export enum Naipes {
   soprano,
   tenor,
   contralto,

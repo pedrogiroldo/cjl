@@ -1,0 +1,141 @@
+{
+  "songs": [
+    {
+      "id": 1,
+      "title": "Nosso Deus",
+      "author": "Chris Tomlin",
+      "musicPath": "/songs/nosso-deus",
+      "imageUrl": "/images/logo-fundo.webp",
+      "lyrics": {
+        "lines": [
+          { "text": "Água em vinho tornou", "time": 23 },
+          { "text": "Os olhos dos cegos abriu", "time": 27 },
+          { "text": "Não há outro", "time": 30 },
+          { "text": "Igual a Deus", "time": 35 },
+          { "text": "Dentro da noite brilhou", "time": 40 },
+          { "text": "Das cinzas nos fez ressurgir", "time": 45 },
+          { "text": "Não há outro", "time": 48 },
+          { "text": "Igual a Deus", "time": 53 },
+          { "text": "Deus tu és grande, és invencível", "time": 59 },
+          { "text": "Estás acima de qualquer outro", "time": 63 },
+          { "text": "És Deus que cura, grande em poder", "time": 67 },
+          { "text": "Nosso Deus, nosso Deus.", "time": 73 },
+          { "text": "Dentro da noite brilhou", "time": 86 },
+          { "text": "Das cinzas nos fez ressurgir", "time": 90 },
+          { "text": "Não há outro", "time": 94 },
+          { "text": "Igual a Deus", "time": 98 },
+
+          { "text": "Deus tu és grande, és invencível", "time": 105 },
+          { "text": "Estás acima de qualquer outro", "time": 108 },
+          { "text": "És Deus que cura, grande em poder", "time": 113 },
+          { "text": "Nosso Deus, nosso Deus.", "time": 117 },
+          { "text": "Deus tu és grande, és invencível", "time": 122 },
+          { "text": "Estás acima de qualquer outro", "time": 128 },
+          { "text": "És Deus que cura, grande em poder", "time": 132 },
+          { "text": "Nosso Deus, nosso Deus.", "time": 135 },
+
+          { "text": "Se Deus está conosco", "time": 159 },
+          { "text": "Quem pode nos deter?", "time": 161 },
+          { "text": "Se Deus está conosco", "time": 164 },
+          { "text": "Não há o que temer", "time": 166 },
+          { "text": "Se Deus está conosco", "time": 169 },
+          { "text": "Quem pode nos deter?", "time": 172 },
+          { "text": "Se Deus está conosco", "time": 174 },
+          { "text": "Não há o que temer", "time": 176 },
+          { "text": "Não há o que temer", "time": 184 },
+
+          { "text": "Deus tu és grande, és invencível", "time": 196 },
+          { "text": "Estás acima de qualquer outro", "time": 199 },
+          { "text": "És Deus que cura, grande em poder", "time": 204 },
+          { "text": "Nosso Deus, nosso Deus.", "time": 209 },
+          { "text": "Deus tu és grande, és invencível", "time": 214 },
+          { "text": "Estás acima de qualquer outro", "time": 220 },
+          { "text": "És Deus que cura, grande em poder", "time": 224 },
+          { "text": "Nosso Deus, nosso Deus.", "time": 227 },
+
+          { "text": "Se Deus está conosco", "time": 232 },
+          { "text": "Quem pode nos deter?", "time": 234 },
+          { "text": "Se Deus está conosco", "time": 237 },
+          { "text": "Não há o que temer", "time": 239 },
+          { "text": "Se Deus está conosco", "time": 242 },
+          { "text": "Quem pode nos deter?", "time": 244 },
+          { "text": "Se Deus está conosco", "time": 246 },
+          { "text": "Não há o que temer", "time": 248 },
+          { "text": "Não há o que temer", "time": 258 }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Uma Geração",
+      "author": "Nova Voz",
+      "musicPath": "/songs/uma-geracao",
+      "imageUrl": "/images/logo-fundo.webp",
+      "lyrics": {
+        "lines": [
+          { "text": "Vi um anjo voando pelo Céu", "time": 26 },
+          { "text": "Levando o evangelho em suas mãos", "time": 30 },
+          { "text": "Toda a tribo, língua e nação", "time": 35 },
+          { "text": "Irá ouvir", "time": 39 },
+
+          { "text": "O povo escolhido", "time": 42 },
+          { "text": "Ergue sua voz", "time": 48 },
+          { "text": "Temei a Deus", "time": 52 },
+          { "text": "E dá-lhe glória", "time": 54 },
+          { "text": "Pois Seu juízo chegou", "time": 56 },
+
+          { "text": "Somos uma geração", "time": 62 },
+          { "text": "Que se levanta", "time": 64 },
+          { "text": "Uma geração", "time": 68 },
+          { "text": "Que é fiel", "time": 69 },
+          { "text": "Uma geração", "time": 72 },
+          { "text": "Pra restaurar a adoração ", "time": 74 },
+          { "text": "Ao único Deus e Senhor", "time": 77 },
+
+          { "text": "Caiu, caiu a grande Babilônia!", "time": 90 },
+          { "text": "Jamais se levantará", "time": 95 },
+          { "text": "E quem adorar ao Deus verdadeiro", "time": 99 },
+          { "text": "Sua marca receberá", "time": 104 },
+
+          { "text": "O povo escolhido", "time": 108 },
+          { "text": "Ergue sua voz", "time": 113 },
+          { "text": "Adorai Aquele que fez", "time": 117 },
+          { "text": "O Céu, a Terra e o mar", "time": 122 },
+
+          { "text": "Somos uma geração", "time": 127 },
+          { "text": "Que se levanta", "time": 131 },
+          { "text": "Uma geração", "time": 133 },
+          { "text": "Que é fiel", "time": 135 },
+          { "text": "Uma geração", "time": 137 },
+          { "text": "Pra restaurar a adoração", "time": 142 },
+          { "text": "Ao único Deus e Senhor", "time": 144 },
+
+          { "text": "Uma geração", "time": 150 },
+          { "text": "Uma geração", "time": 152 },
+          { "text": "Uma geração", "time": 155 },
+          { "text": "Uma geração", "time": 159 },
+
+          { "text": "Os que guardam os mandamentos", "time": 167 },
+          { "text": "Tem a fé em Jesus (uma geração)", "time": 172 },
+          { "text": "Os que guardam os mandamentos", "time": 176 },
+          { "text": "E têm a fé em Jesus (uma geração)", "time": 181 },
+          { "text": "Os que guardam os mandamentos", "time": 185 },
+          { "text": "E têm a fé em Jesus (uma geração)", "time": 189 },
+          { "text": "Os que guardam os mandamentos", "time": 194 },
+          { "text": "E têm a fé em Jesus (uma geração)", "time": 198 },
+
+          { "text": "Uma geração", "time": 205 },
+          { "text": "Que se levanta", "time": 211 },
+          { "text": "Uma geração", "time": 213 },
+          { "text": "Que é fiel", "time": 216 },
+          { "text": "Uma geração", "time": 218 },
+          { "text": "Pra restaurar a adoração", "time": 220 },
+          { "text": "Ao único Deus e Senhor", "time": 224 },
+
+          { "text": "Uma geração", "time": 237 },
+          { "text": "Uma geração!", "time": 242 }
+        ]
+      }
+    }
+  ]
+}

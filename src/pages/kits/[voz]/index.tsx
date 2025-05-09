@@ -11,6 +11,12 @@ const songs = [
     author: "Chris Tomlin",
     imageUrl: "/images/logo-fundo.webp",
   },
+  {
+    id: 2,
+    title: "Uma Geração",
+    author: "Nova Voz",
+    imageUrl: "/images/logo-fundo.webp",
+  },
 ];
 
 export default function Songs() {
