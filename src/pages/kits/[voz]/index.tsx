@@ -17,6 +17,12 @@ const songs = [
     author: "Nova Voz",
     imageUrl: "/images/logo-fundo.webp",
   },
+  {
+    id: 3,
+    title: "Eu Confio em Ti",
+    author: "Eliabe Ventura e Jean Robson",
+    imageUrl: "/images/logo-fundo.webp",
+  },
 ];
 
 export default function Songs() {

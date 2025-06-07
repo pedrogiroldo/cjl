@@ -136,6 +136,85 @@
           { "text": "Uma geração!", "time": 242 }
         ]
       }
+    },
+    {
+      "id": 3,
+      "title": "Eu Confio em Ti",
+      "author": "Eliabe Ventura e Jean Robson",
+      "musicPath": "/songs/eu-confio-em-ti",
+      "imageUrl": "/images/logo-fundo.webp",
+      "lyrics": {
+        "lines": [
+          { "text": "Jesus,", "time": 1 },
+          { "text": "Tu és a esperança", "time": 4 },
+          { "text": "dos meus dias aqui,", "time": 6 },
+          { "text": "És a minha força para não desistir", "time": 11 },
+          { "text": "Jesus, eu confio em Ti!", "time": 16 },
+
+          {
+            "text": "Jesus,",
+            "time": 23
+          },
+          {
+            "text": "Tu és a esperança",
+            "time": 25
+          },
+          {
+            "text": "dos meus dias aqui,",
+            "time": 26
+          },
+          { "text": "És a minha força para não desistir", "time": 33 },
+          { "text": "Jesus, eu confio em Ti!", "time": 39 },
+
+          { "text": "Eu confesso, estou cansado de tanto lutar", "time": 44 },
+          { "text": "Meu coração anda apertado, só quero chorar", "time": 49 },
+          { "text": "O meu fardo está pesado, não posso levar", "time": 55 },
+          { "text": "Não me deixe carregá-lo, ó Pai!", "time": 61 },
+
+          {
+            "text": "E assim eu vou seguindo em frente, sem desanimar",
+            "time": 65
+          },
+          { "text": "És a minha força para não desistir", "time": 77 },
+          { "text": "Jesus, eu confio em Ti", "time": 83 },
+
+          {
+            "text": "Mesmo em meio às provações eu encontro a paz",
+            "time": 88
+          },
+          { "text": "Se tentado pelo mal, há vitória em Ti", "time": 93 },
+          { "text": "Nos momentos mais difíceis comigo estás", "time": 99 },
+          { "text": "Estarás comigo até o fim!", "time": 104 },
+
+          {
+            "text": "E assim eu vou seguindo em frente, sem desanimar",
+            "time": 109
+          },
+          { "text": "És a minha força para não desistir", "time": 120 },
+          { "text": "Jesus, eu confio em Ti", "time": 126 },
+
+          {
+            "text": "Tua mão me acolheu e eu sei que não vais me abandonar",
+            "time": 143
+          },
+          { "text": "Eu confio em Ti, eu confio em Ti!", "time": 154 },
+
+          {
+            "text": "E assim eu vou seguindo em frente, sem desanimar",
+            "time": 163
+          },
+          { "text": "És a minha força para não desistir", "time": 175 },
+          { "text": "Jesus, eu confio em Ti", "time": 180 },
+
+          {
+            "text": "E assim eu vou seguindo em frente, sem desanimar",
+            "time": 185
+          },
+          { "text": "És a minha força para não desistir", "time": 196 },
+          { "text": "Jesus, eu confio em Ti", "time": 203 },
+          { "text": "Jesus, eu confio em Ti", "time": 208 }
+        ]
+      }
     }
   ]
 }
