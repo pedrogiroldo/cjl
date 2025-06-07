@@ -21,14 +21,18 @@ export default function Musica() {
   const songId = Number(params?.musica ?? "");
 
   const {
+    volume,
     currentTime,
     duration,
+    isMuted,
     isPlaying,
     isReplayEnabled,
     updateCurrentTime,
     togglePlay,
     toggleReplay,
+    toggleMute,
     handleSeek,
+    handleVolumeChange,
   } = useLocalAudioPlayer(song?.musicPath + "/" + voice + ".mp3");
 
   const formattedVoice =
@@ -106,6 +110,10 @@ export default function Musica() {
             isReplayEnabled={isReplayEnabled}
             toggleReplay={toggleReplay}
             handleSeek={handleSeek}
+            isMuted={isMuted}
+            volume={volume}
+            toggleMute={toggleMute}
+            handleVolumeChange={handleVolumeChange}
           />
         </div>
       </div>

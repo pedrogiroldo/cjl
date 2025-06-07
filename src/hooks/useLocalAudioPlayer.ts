@@ -38,6 +38,9 @@ export function useLocalAudioPlayer(audioSrc: string) {
   };
 
   const handleVolumeChange = (newVolume: number) => {
+    if (isMuted) {
+      toggleMute();
+    }
     const vol = Math.max(0, Math.min(1, newVolume));
     setVolume(vol);
     if (audioRef.current) {
