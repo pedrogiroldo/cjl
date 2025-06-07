@@ -24,8 +24,10 @@ export default function Musica() {
     currentTime,
     duration,
     isPlaying,
+    isReplayEnabled,
     updateCurrentTime,
     togglePlay,
+    toggleReplay,
     handleSeek,
   } = useLocalAudioPlayer(song?.musicPath + "/" + voice + ".mp3");
 
@@ -101,6 +103,8 @@ export default function Musica() {
             duration={duration}
             isPlaying={isPlaying}
             togglePlay={togglePlay}
+            isReplayEnabled={isReplayEnabled}
+            toggleReplay={toggleReplay}
             handleSeek={handleSeek}
           />
         </div>

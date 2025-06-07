@@ -8,6 +8,7 @@ export function useLocalAudioPlayer(audioSrc: string) {
   const [currentTime, setCurrentTime] = useState(0);
   const [volume, setVolume] = useState(1); // range de 0 a 1
   const [isMuted, setIsMuted] = useState(false);
+  const [isReplayEnabled, setIsReplayEnabled] = useState(false);
 
   const togglePlay = () => {
     if (!audioRef.current) return;
@@ -16,6 +17,10 @@ export function useLocalAudioPlayer(audioSrc: string) {
     } else {
       audioRef.current.play();
     }
+  };
+
+  const toggleReplay = () => {
+    setIsReplayEnabled((prev) => !prev);
   };
 
   const handleSeek = (newTime: number) => {
@@ -68,8 +73,6 @@ export function useLocalAudioPlayer(audioSrc: string) {
     audio.addEventListener("pause", onPause);
     audio.addEventListener("ended", onEnded);
 
-    audio.volume = volume;
-
     return () => {
       audio.pause();
       audio.src = "";
@@ -83,6 +86,24 @@ export function useLocalAudioPlayer(audioSrc: string) {
     };
   }, [audioSrc]);
 
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.loop = isReplayEnabled;
+    }
+  }, [isReplayEnabled]);
+
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = volume;
+    }
+  }, [volume]);
+
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.muted = isMuted;
+    }
+  }, [isMuted]);
+
   return {
     audio: audioRef.current,
     isPlaying,
@@ -90,10 +111,12 @@ export function useLocalAudioPlayer(audioSrc: string) {
     currentTime,
     volume,
     isMuted,
+    isReplayEnabled,
     togglePlay,
     handleSeek,
     handleVolumeChange,
     toggleMute,
+    toggleReplay,
     updateCurrentTime,
   };
 }
