@@ -2,11 +2,12 @@ import Layout from "@/components/Layout";
 import SongPlayer from "@/components/SongPlayer";
 import TextReader from "@/components/TextReader";
 import { useLocalAudioPlayer } from "@/hooks/useLocalAudioPlayer";
-import { CaretLeft, Eye, EyeSlash } from "@phosphor-icons/react";
+import { CaretLeft } from "@phosphor-icons/react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Song } from "@/types";
+import TextSettingsDropdown from "@/components/TextSettingsDropdown";
 
 export default function Musica() {
   const params = useParams();
@@ -17,6 +18,8 @@ export default function Musica() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  const [textAlign, setTextAlign] = useState<"left" | "center">("center");
+
   const voice = params?.voz ?? "";
   const songId = Number(params?.musica ?? "");
 
@@ -24,13 +27,11 @@ export default function Musica() {
     volume,
     currentTime,
     duration,
-    isMuted,
     isPlaying,
     isReplayEnabled,
     updateCurrentTime,
     togglePlay,
     toggleReplay,
-    toggleMute,
     handleSeek,
     handleVolumeChange,
   } = useLocalAudioPlayer(song?.musicPath + "/" + voice + ".mp3");
@@ -76,29 +77,34 @@ export default function Musica() {
                 {song?.title}
               </h2>
               <div className="w-8">
-                <button onClick={() => setEnableReading((prev) => !prev)}>
-                  {enableReading ? <Eye size={28} /> : <EyeSlash size={28} />}
-                </button>
+                <TextSettingsDropdown
+                  enableReading={enableReading}
+                  textAlign={textAlign}
+                  onToggleReading={() => setEnableReading((prev) => !prev)}
+                  onChangeTextAlign={(align) => setTextAlign(align)}
+                />
               </div>
             </div>
             <h3 className="text-xl font-semibold text-gray-100">
               {formattedVoice}
             </h3>
           </div>
-          <div className="h-full w-full flex flex-col gap-3 pb-24">
-            <div className="text-center">
+
+          {(loading || error) && (
+            <div className=" text-center">
               {loading && <p className="text-gray-50">Carregando...</p>}
               {error && <p className="text-red-500">{error}</p>}
             </div>
-            {song && (
-              <TextReader
-                lyrics={song.lyrics}
-                currentTime={currentTime}
-                enableReading={enableReading}
-                updateCurrentTime={updateCurrentTime}
-              />
-            )}
-          </div>
+          )}
+          {song && (
+            <TextReader
+              lyrics={song.lyrics}
+              currentTime={currentTime}
+              enableReading={enableReading}
+              updateCurrentTime={updateCurrentTime}
+              textAlign={textAlign}
+            />
+          )}
         </div>
 
         <div className="w-full p-5 rounded-3xl bg-gray-800">
@@ -110,9 +116,7 @@ export default function Musica() {
             isReplayEnabled={isReplayEnabled}
             toggleReplay={toggleReplay}
             handleSeek={handleSeek}
-            isMuted={isMuted}
             volume={volume}
-            toggleMute={toggleMute}
             handleVolumeChange={handleVolumeChange}
           />
         </div>

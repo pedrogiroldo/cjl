@@ -1,0 +1,95 @@
+import {
+  DotsThreeVertical,
+  TextAlignCenter,
+  TextAlignLeft,
+} from "@phosphor-icons/react";
+import { useEffect, useRef, useState } from "react";
+
+type TextSettingsDropdownProps = {
+  enableReading: boolean;
+  textAlign: "left" | "center";
+  onToggleReading: () => void;
+  onChangeTextAlign: (align: "left" | "center") => void;
+};
+
+export default function TextSettingsDropdown({
+  enableReading,
+  textAlign,
+  onToggleReading,
+  onChangeTextAlign,
+}: TextSettingsDropdownProps) {
+  const [open, setOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  return (
+    <div className="relative" ref={menuRef}>
+      <button
+        onClick={() => setOpen((prev) => !prev)}
+        className="text-gray-300 hover:text-white transition"
+      >
+        <DotsThreeVertical size={28} weight="bold" />
+      </button>
+
+      {open && (
+        <div className="absolute right-0 mt-2 w-48 bg-gray-900/90 border border-gray-700 shadow-lg p-2 px-4 rounded-lg z-10 text-sm text-gray-200">
+          <div className="py-1 text-xs uppercase text-gray-200">
+            Acompanhar letra
+          </div>
+
+          <label className="relative inline-flex items-center cursor-pointer gap-2">
+            <input
+              type="checkbox"
+              checked={enableReading}
+              onChange={() => onToggleReading()}
+              className="sr-only peer"
+            />
+            <div className="w-11 h-6 bg-gray-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary rounded-full peer peer-checked:bg-primary transition-all"></div>
+            <div className="absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow peer-checked:translate-x-full transition-transform"></div>
+            <span className="text-sm font-medium text-white">
+              {enableReading ? "Sim" : "Não"}
+            </span>
+          </label>
+
+          <div className="border-t border-gray-700 my-2" />
+
+          <div className="py-1 text-xs uppercase text-gray-200">
+            Alinhamento
+          </div>
+
+          <div className="flex gap-1">
+            <button
+              className={`text-center px-2 py-1 rounded ${
+                textAlign === "left"
+                  ? "bg-gray-700 text-white"
+                  : "hover:bg-gray-700"
+              }`}
+              onClick={() => onChangeTextAlign("left")}
+            >
+              <TextAlignLeft size={28} weight="bold" />
+            </button>{" "}
+            <button
+              className={`text-center px-2 py-1 rounded ${
+                textAlign === "center"
+                  ? "bg-gray-700 text-white"
+                  : "hover:bg-gray-700"
+              }`}
+              onClick={() => onChangeTextAlign("center")}
+            >
+              <TextAlignCenter size={28} weight="bold" />
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

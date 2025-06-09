@@ -1,51 +1,57 @@
 import { Lyrics } from "@/types";
 import { useEffect, useRef } from "react";
 
+type TextReaderProps = {
+  lyrics: Lyrics;
+  currentTime: number;
+  enableReading?: boolean;
+  updateCurrentTime: (newTime: number) => void;
+  textAlign: "center" | "left";
+};
+
 function TextReader({
   lyrics,
   currentTime,
   enableReading = true,
   updateCurrentTime,
-}: {
-  lyrics: Lyrics;
-  currentTime: number;
-  enableReading?: boolean;
-  updateCurrentTime: (newTime: number) => void;
-}) {
-  const containerRef = useRef<HTMLDivElement | null>(null);
-  const activeLineRef = useRef<HTMLDivElement | null>(null);
-
-  const handleUpdateCurrentTime = (newTime: number) => {
-    updateCurrentTime(newTime);
-  };
+  textAlign,
+}: TextReaderProps) {
+  const activeLineRef = useRef<HTMLParagraphElement | null>(null);
 
   useEffect(() => {
-    if (enableReading) {
-      if (activeLineRef.current && containerRef.current) {
-        containerRef.current.scrollTop =
-          activeLineRef.current.offsetTop -
-          containerRef.current.clientHeight / 2;
-      }
+    if (enableReading && activeLineRef.current) {
+      activeLineRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
     }
-  }, [currentTime, lyrics, enableReading]);
+  }, [currentTime, enableReading]);
 
   return (
-    <div ref={containerRef} className="p-5 overflow-y-auto text-center">
+    <div
+      className={`px-5 overflow-y-auto ${textAlign === "center" ? "text-center" : "text-left"}`}
+    >
       <div className="flex flex-col gap-2">
         {lyrics.lines.map((line, index) => {
+          const nextLineTime = lyrics.lines[index + 1]?.time ?? Infinity;
           const isActive =
-            enableReading &&
-            currentTime >= line.time &&
-            currentTime < (lyrics.lines[index + 1]?.time || Infinity);
+            currentTime >= line.time && currentTime < nextLineTime;
+          const isPastLine = currentTime < line.time;
 
           return (
             <p
-              ref={isActive ? activeLineRef : null}
               key={index}
+              ref={isActive ? activeLineRef : null}
+              onClick={() => updateCurrentTime(line.time)}
               className={`transition-all duration-400 text-xl ${
-                isActive ? "font-bold text-primary" : "text-gray-50"
+                !enableReading
+                  ? "text-gray-200"
+                  : isActive
+                    ? "font-bold text-primary"
+                    : isPastLine
+                      ? "text-gray-200"
+                      : "text-gray-500"
               }`}
-              onClick={() => handleUpdateCurrentTime(line.time)}
             >
               {line.text}
             </p>
