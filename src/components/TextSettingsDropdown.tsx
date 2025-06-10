@@ -2,6 +2,7 @@ import {
   DotsThreeVertical,
   TextAlignCenter,
   TextAlignLeft,
+  DownloadSimple,
 } from "@phosphor-icons/react";
 import { useEffect, useRef, useState } from "react";
 
@@ -10,6 +11,7 @@ type TextSettingsDropdownProps = {
   textAlign: "left" | "center";
   onToggleReading: () => void;
   onChangeTextAlign: (align: "left" | "center") => void;
+  onDownloadMp3: () => void; // nova prop opcional, se quiser chamar função
 };
 
 export default function TextSettingsDropdown({
@@ -17,6 +19,7 @@ export default function TextSettingsDropdown({
   textAlign,
   onToggleReading,
   onChangeTextAlign,
+  onDownloadMp3,
 }: TextSettingsDropdownProps) {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -41,7 +44,7 @@ export default function TextSettingsDropdown({
       </button>
 
       {open && (
-        <div className="absolute right-0 mt-2 w-48 bg-gray-900/90 border border-gray-700 shadow-lg p-2 px-4 rounded-lg z-10 text-sm text-gray-200">
+        <div className="absolute right-0 mt-2 w-48 bg-gray-900 border border-gray-700 shadow-lg p-2 px-4 rounded-lg z-10 text-sm text-gray-200">
           <div className="py-1 text-xs uppercase text-gray-200">
             Acompanhar letra
           </div>
@@ -66,7 +69,7 @@ export default function TextSettingsDropdown({
             Alinhamento
           </div>
 
-          <div className="flex gap-1">
+          <div className="flex gap-1 mb-2">
             <button
               className={`text-center px-2 py-1 rounded ${
                 textAlign === "left"
@@ -76,7 +79,7 @@ export default function TextSettingsDropdown({
               onClick={() => onChangeTextAlign("left")}
             >
               <TextAlignLeft size={28} weight="bold" />
-            </button>{" "}
+            </button>
             <button
               className={`text-center px-2 py-1 rounded ${
                 textAlign === "center"
@@ -88,6 +91,16 @@ export default function TextSettingsDropdown({
               <TextAlignCenter size={28} weight="bold" />
             </button>
           </div>
+
+          <div className="border-t border-gray-700 my-2" />
+
+          <button
+            onClick={onDownloadMp3}
+            className="flex items-center gap-2 w-full text-left px-2 py-1 rounded hover:bg-gray-700 transition"
+          >
+            <DownloadSimple size={20} />
+            Baixar MP3
+          </button>
         </div>
       )}
     </div>

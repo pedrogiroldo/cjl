@@ -14,14 +14,14 @@ export default function Musica() {
 
   const [song, setSong] = useState<Song>();
   const [enableReading, setEnableReading] = useState(true);
-
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
   const [textAlign, setTextAlign] = useState<"left" | "center">("center");
 
   const voice = params?.voz ?? "";
   const songId = Number(params?.musica ?? "");
+
+  const songPath = `${song?.musicPath}/${voice}.mp3`;
 
   const {
     volume,
@@ -34,7 +34,7 @@ export default function Musica() {
     toggleReplay,
     handleSeek,
     handleVolumeChange,
-  } = useLocalAudioPlayer(song?.musicPath + "/" + voice + ".mp3");
+  } = useLocalAudioPlayer(songPath);
 
   const formattedVoice =
     voice?.at(0)?.toUpperCase() + voice?.toString().substring(1);
@@ -50,7 +50,6 @@ export default function Musica() {
         }
         const data: Song = await response.json();
         setSong(data);
-
         setError(null);
       } catch (error) {
         setError((error as Error).message);
@@ -63,6 +62,14 @@ export default function Musica() {
       fetchMusica();
     }
   }, [songId]);
+
+  const handleDownloadMp3 = () => {
+    if (!song) return;
+    const downloadLink = document.createElement("a");
+    downloadLink.href = songPath;
+    downloadLink.download = `${song.title} - ${formattedVoice}.mp3`;
+    downloadLink.click();
+  };
 
   return (
     <Layout submenu title={song?.title + " | CJL"}>
@@ -82,6 +89,7 @@ export default function Musica() {
                   textAlign={textAlign}
                   onToggleReading={() => setEnableReading((prev) => !prev)}
                   onChangeTextAlign={(align) => setTextAlign(align)}
+                  onDownloadMp3={handleDownloadMp3}
                 />
               </div>
             </div>
@@ -91,11 +99,12 @@ export default function Musica() {
           </div>
 
           {(loading || error) && (
-            <div className=" text-center">
+            <div className="text-center">
               {loading && <p className="text-gray-50">Carregando...</p>}
               {error && <p className="text-red-500">{error}</p>}
             </div>
           )}
+
           {song && (
             <TextReader
               lyrics={song.lyrics}
