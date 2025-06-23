@@ -20,7 +20,7 @@ export default function Home() {
             </button>
           </Link>
           <Link
-            href="https://chat.whatsapp.com/DWsV6HbuUstDQ1ahZ1u7I9"
+            href="https://wa.me/5543991956641?text=Olá%2C%20gostaria%20de%20falar%20com%20o%20Coral%20Jovem%20de%20Londrina"
             target="__blank"
           >
             <button className="bg-secondary hover:bg-secondary text-white py-2 px-8 w-full md:w-max rounded-full">
