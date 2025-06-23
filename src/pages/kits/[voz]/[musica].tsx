@@ -24,6 +24,7 @@ export default function Musica() {
     "text-align",
     "center",
   );
+  const [fontSize, setFontSize] = useLocalStorage("font-size", 22);
 
   const voice = params?.voz ?? "";
   const songId = Number(params?.musica ?? "");
@@ -94,9 +95,11 @@ export default function Musica() {
                 <TextSettingsDropdown
                   enableReading={enableReading}
                   textAlign={textAlign}
+                  fontSize={fontSize}
                   onToggleReading={() => setEnableReading((prev) => !prev)}
                   onChangeTextAlign={(align) => setTextAlign(align)}
                   onDownloadMp3={handleDownloadMp3}
+                  onChangeFontSize={(size) => setFontSize(size)}
                 />
               </div>
             </div>
@@ -119,6 +122,7 @@ export default function Musica() {
               enableReading={enableReading}
               updateCurrentTime={updateCurrentTime}
               textAlign={textAlign}
+              fontSize={fontSize}
             />
           )}
         </div>

@@ -7,6 +7,7 @@ type TextReaderProps = {
   enableReading?: boolean;
   updateCurrentTime: (newTime: number) => void;
   textAlign: "center" | "left";
+  fontSize: number;
 };
 
 function TextReader({
@@ -15,6 +16,7 @@ function TextReader({
   enableReading = true,
   updateCurrentTime,
   textAlign,
+  fontSize,
 }: TextReaderProps) {
   const activeLineRef = useRef<HTMLParagraphElement | null>(null);
 
@@ -43,7 +45,8 @@ function TextReader({
               key={index}
               ref={isActive ? activeLineRef : null}
               onClick={() => updateCurrentTime(line.time)}
-              className={`transition-all duration-400 text-xl ${
+              style={{ fontSize: `${fontSize}px` }}
+              className={`transition-all duration-400 ${
                 !enableReading
                   ? "text-gray-200"
                   : isActive

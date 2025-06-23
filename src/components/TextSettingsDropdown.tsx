@@ -9,17 +9,21 @@ import { useEffect, useRef, useState } from "react";
 type TextSettingsDropdownProps = {
   enableReading: boolean;
   textAlign: "left" | "center";
+  fontSize: number;
   onToggleReading: () => void;
   onChangeTextAlign: (align: "left" | "center") => void;
-  onDownloadMp3: () => void; // nova prop opcional, se quiser chamar função
+  onDownloadMp3: () => void;
+  onChangeFontSize: (size: number) => void;
 };
 
 export default function TextSettingsDropdown({
   enableReading,
   textAlign,
+  fontSize,
   onToggleReading,
   onChangeTextAlign,
   onDownloadMp3,
+  onChangeFontSize,
 }: TextSettingsDropdownProps) {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -90,6 +94,29 @@ export default function TextSettingsDropdown({
             >
               <TextAlignCenter size={28} weight="bold" />
             </button>
+          </div>
+
+          <div className="border-t border-gray-700 my-2" />
+
+          <div className="py-1 text-xs uppercase text-gray-200">
+            Tamanho da Letra
+          </div>
+
+          <div className="flex gap-1 mb-2">
+            <input
+              type="range"
+              min={16}
+              max={32}
+              step={2}
+              value={fontSize}
+              onChange={(e) => onChangeFontSize(Number(e.target.value))}
+              className="w-36 h-1 appearance-none accent-primary"
+              style={{
+                background: `linear-gradient(to right, var(--color-primary) ${
+                  ((fontSize - 16) / (32 - 16)) * 100
+                }%, #D1D5DB ${((fontSize - 16) / (32 - 16)) * 100}%)`,
+              }}
+            />
           </div>
 
           <div className="border-t border-gray-700 my-2" />
