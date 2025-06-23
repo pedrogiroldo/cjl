@@ -8,15 +8,22 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Song } from "@/types";
 import TextSettingsDropdown from "@/components/TextSettingsDropdown";
+import { useLocalStorage } from "usehooks-ts";
 
 export default function Musica() {
   const params = useParams();
 
   const [song, setSong] = useState<Song>();
-  const [enableReading, setEnableReading] = useState(true);
+  const [enableReading, setEnableReading] = useLocalStorage(
+    "enable-reading",
+    true,
+  );
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [textAlign, setTextAlign] = useState<"left" | "center">("center");
+  const [textAlign, setTextAlign] = useLocalStorage<"left" | "center">(
+    "text-align",
+    "center",
+  );
 
   const voice = params?.voz ?? "";
   const songId = Number(params?.musica ?? "");
