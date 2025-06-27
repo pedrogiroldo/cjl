@@ -3,6 +3,7 @@ import {
   TextAlignCenter,
   TextAlignLeft,
   DownloadSimple,
+  Copy,
 } from "@phosphor-icons/react";
 import { useEffect, useRef, useState } from "react";
 
@@ -14,6 +15,7 @@ type TextSettingsDropdownProps = {
   onChangeTextAlign: (align: "left" | "center") => void;
   onDownloadMp3: () => void;
   onChangeFontSize: (size: number) => void;
+  onCopyLyrics: () => void;
 };
 
 export default function TextSettingsDropdown({
@@ -24,6 +26,7 @@ export default function TextSettingsDropdown({
   onChangeTextAlign,
   onDownloadMp3,
   onChangeFontSize,
+  onCopyLyrics,
 }: TextSettingsDropdownProps) {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -127,6 +130,16 @@ export default function TextSettingsDropdown({
           >
             <DownloadSimple size={20} />
             Baixar MP3
+          </button>
+
+          <div className="border-t border-gray-700 my-2" />
+
+          <button
+            onClick={onCopyLyrics}
+            className="flex items-center gap-2 w-full text-left px-2 py-1 rounded hover:bg-gray-700 transition"
+          >
+            <Copy size={20} />
+            Copiar Letra
           </button>
         </div>
       )}

@@ -8,7 +8,8 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Song } from "@/types";
 import TextSettingsDropdown from "@/components/TextSettingsDropdown";
-import { useLocalStorage } from "usehooks-ts";
+import { useCopyToClipboard, useLocalStorage } from "usehooks-ts";
+import { toast } from "react-toastify";
 
 export default function Musica() {
   const params = useParams();
@@ -25,6 +26,7 @@ export default function Musica() {
     "center",
   );
   const [fontSize, setFontSize] = useLocalStorage("font-size", 22);
+  const [, copyToClipboard] = useCopyToClipboard();
 
   const voice = params?.voz ?? "";
   const songId = Number(params?.musica ?? "");
@@ -77,6 +79,13 @@ export default function Musica() {
     downloadLink.href = songPath;
     downloadLink.download = `${song.title} - ${formattedVoice}.mp3`;
     downloadLink.click();
+    toast.success("Download iniciado");
+  };
+
+  const handleCopyLyric = () => {
+    if (!song) return;
+    const fullText = song.lyrics.lines.map((line) => line.text).join("\n");
+    copyToClipboard(fullText).then(() => toast.success("Letra copiada"));
   };
 
   return (
@@ -100,6 +109,7 @@ export default function Musica() {
                   onChangeTextAlign={(align) => setTextAlign(align)}
                   onDownloadMp3={handleDownloadMp3}
                   onChangeFontSize={(size) => setFontSize(size)}
+                  onCopyLyrics={handleCopyLyric}
                 />
               </div>
             </div>

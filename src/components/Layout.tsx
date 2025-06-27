@@ -8,6 +8,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { ReactNode } from "react";
 import { useDocumentTitle } from "usehooks-ts";
+import CustomToastContainer from "./CustomToastContainer";
 
 const menuItems = [
   { title: "Home", icon: HouseSimple, link: "/" },
@@ -47,6 +48,8 @@ function Layout({
                 />
               </Link>
             </header>
+
+            <CustomToastContainer />
 
             <main className="flex-1 w-full flex overflow-auto">{children}</main>
 
