@@ -32,7 +32,7 @@ function Layout({
   return (
     <div className="h-dvh bg-[url(/images/coral.webp)] bg-no-repeat bg-cover bg-center">
       <div className="bg-black/60 h-full flex justify-center items-center">
-        <div className="max-w-3xl container h-screen">
+        <div className="max-w-3xl container h-full">
           <div className="w-full h-full p-5 flex flex-col items-center gap-5">
             <header className="w-full flex justify-center">
               <Link href="/">
