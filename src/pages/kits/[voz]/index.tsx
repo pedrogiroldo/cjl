@@ -23,6 +23,12 @@ const songs = [
     author: "Eliabe Ventura e Jean Robson",
     imageUrl: "/images/logo-fundo.webp",
   },
+  {
+    id: 4,
+    title: "Venha Entregar",
+    author: "David Crowder",
+    imageUrl: "/images/logo-fundo.webp",
+  },
 ];
 
 export default function Songs() {
