@@ -219,6 +219,52 @@
           { "text": "Jesus, eu confio em Ti", "time": 208 }
         ]
       }
+    },
+    {
+      "id": 4,
+      "title": "Venha Entregar",
+      "author": "David Crowder",
+      "musicPath": "/songs/venha-entregar",
+      "imageUrl": "/images/logo-fundo.webp",
+      "lyrics": {
+        "lines": [
+          { "text": "Deixe a tristeza ficar para trás", "time": 12 },
+          { "text": "O quebrantado alívio terá", "time": 17 },
+          { "text": "Diante da graça se deixe cair", "time": 22 },
+          { "text": "Pranto algum pode ao Céu resistir", "time": 27 },
+
+          { "text": "Deixe seu fardo, deixe o temor", "time": 34 },
+          { "text": "Em meio às dores erga o olhar", "time": 45 },
+          { "text": "E volte pra casa, perto ela está", "time": 55 },
+          { "text": "O seu coração como estiver,", "time": 65 },
+          { "text": "Venha entregar", "time": 70 },
+
+          { "text": "Existe esperança pra quem longe foi", "time": 82 },
+          { "text": "Sua graça alcança ao pecador", "time": 87 },
+          { "text": "Alívio ao cansado e paz eternal", "time": 92 },
+          { "text": "Não há no mundo promessa maior", "time": 97 },
+
+          { "text": "Deixe seu fardo, deixe o temor", "time": 107 },
+          { "text": "Em meio às dores erga o olhar", "time": 115 },
+          { "text": "E, volte pra casa, perto ela está", "time": 125 },
+          { "text": "O seu coração como estiver,", "time": 135 },
+          { "text": "Venha entregar", "time": 141 },
+          { "text": "Tal como está", "time": 148 },
+          { "text": "Nos braços do pai", "time": 151 },
+          { "text": "O seu coração", "time": 156 },
+
+          { "text": "O sol logo nasce, não perca a fé", "time": 174 },
+          { "text": "Pranto algum pode ao Céu resistir", "time": 177 },
+          { "text": "Pranto algum pode ao Céu resistir", "time": 185 },
+
+          { "text": "Deixe seu fardo, deixe o temor", "time": 190 },
+          { "text": "Em meio às dores erga o olhar", "time": 190 },
+          { "text": "E, volte pra casa, perto ela está", "time": 200 },
+          { "text": "O seu coração como estiver,", "time": 212 },
+          { "text": "Venha entregar", "time": 225 },
+          { "text": "Venha entregar", "time": 240 }
+        ]
+      }
     }
   ]
 }
