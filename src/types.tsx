@@ -34,3 +34,8 @@ export enum Naipes {
   baixo,
   todos,
 }
+
+export interface userLoginDto {
+  email: string;
+  password: string;
+}
