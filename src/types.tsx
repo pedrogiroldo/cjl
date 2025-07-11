@@ -35,7 +35,7 @@ export enum Naipes {
   todos,
 }
 
-export interface userLoginDto {
+export interface UserLoginDto {
   email: string;
   password: string;
 }
