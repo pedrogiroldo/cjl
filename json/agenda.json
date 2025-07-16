@@ -105,8 +105,8 @@
     {
       "id": 22,
       "date": "2025-07-18",
-      "title": "Folga",
-      "location": ""
+      "title": "Ensaio Semanal",
+      "location": "IASD Central de Londrina - Rua Natal, 42 - Jardim Agari"
     },
     {
       "id": 23,
@@ -121,10 +121,16 @@
       "location": "IASD Central de Londrina - Rua Natal, 42 - Jardim Agari"
     },
     {
+      "id": 24,
+      "date": "2025-07-26",
+      "title": "18:30 - Arraiá Jovem",
+      "location": "Chácara Bayer"
+    },
+    {
       "id": 25,
       "date": "2025-08-01",
-      "title": "Ensaio Semanal",
-      "location": "IASD Central de Londrina - Rua Natal, 42 - Jardim Agari"
+      "title": "Folga",
+      "location": "Semana de Oração Jovem"
     },
     {
       "id": 26,
@@ -195,8 +201,8 @@
     {
       "id": 37,
       "date": "2025-10-10",
-      "title": "Folga",
-      "location": ""
+      "title": "Ensaio para a Apresentação",
+      "location": "IASD Central de Londrina - Rua Natal, 42 - Jardim Agari"
     },
     {
       "id": 38,
