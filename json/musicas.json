@@ -265,6 +265,36 @@
           { "text": "Venha entregar", "time": 240 }
         ]
       }
+    },
+    {
+      "id": 5,
+      "title": "Digno",
+      "author": "",
+      "musicPath": "/songs/digno",
+      "imageUrl": "/images/logo-fundo.webp",
+      "lyrics": {
+        "lines": []
+      }
+    },
+    {
+      "id": 6,
+      "title": "Intensamente",
+      "author": "",
+      "musicPath": "/songs/intensamente",
+      "imageUrl": "/images/logo-fundo.webp",
+      "lyrics": {
+        "lines": []
+      }
+    },
+    {
+      "id": 5,
+      "title": "Santo Espirito",
+      "author": "",
+      "musicPath": "/songs/santo-espirito",
+      "imageUrl": "/images/logo-fundo.webp",
+      "lyrics": {
+        "lines": []
+      }
     }
   ]
 }
