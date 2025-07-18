@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import Layout from "@/components/Layout";
 import { Event } from "@/types";
+import { toast } from "react-toastify";
 
 export default function Agenda() {
   const [events, setEvents] = useState<Event[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     async function fetchEvents() {
@@ -16,8 +16,8 @@ export default function Agenda() {
         }
         const data = await response.json();
         setEvents(data.events);
-      } catch (err) {
-        setError((err as Error).message);
+      } catch (error) {
+        toast.error((error as Error).message);
       } finally {
         setLoading(false);
       }
@@ -31,9 +31,8 @@ export default function Agenda() {
         <h2 className="text-3xl font-bold text-gray-50">Agenda</h2>
 
         {loading && <p className="text-gray-50">Carregando...</p>}
-        {error && <p className="text-red-500">{error}</p>}
 
-        {!loading && !error && (
+        {!loading && (
           <div className="flex flex-col gap-4 w-full overflow-auto">
             {events.map((program) => {
               const eventDate = new Date(program.date + " 00:00:00");

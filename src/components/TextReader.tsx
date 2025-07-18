@@ -29,6 +29,16 @@ function TextReader({
     }
   }, [currentTime, enableReading]);
 
+  if (lyrics.lines.length === 0) {
+    return (
+      <div className="text-center">
+        <p className="text-gray-200" style={{ fontSize: `${fontSize}px` }}>
+          Ainda não temos a letra para esta música...
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div
       className={`px-5 overflow-y-auto ${textAlign === "center" ? "text-center" : "text-left"}`}
