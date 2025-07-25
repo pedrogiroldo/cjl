@@ -269,31 +269,191 @@
     {
       "id": 5,
       "title": "Digno",
-      "author": "",
+      "author": "Adoradores Novo Tempo",
       "musicPath": "/songs/digno",
       "imageUrl": "/images/logo-fundo.webp",
       "lyrics": {
-        "lines": []
+        "lines": [
+          { "text": "Logo estaremos num lindo lugar", "time": 999 },
+          { "text": "Com jardins e um rio de cristal", "time": 999 },
+          { "text": "Onde andaremos na presença do Senhor", "time": 999 },
+
+          { "text": "Logo da terra se levantarão", "time": 999 },
+          { "text": "Os que dormem o sono dos justos", "time": 999 },
+          { "text": "A eternidade ali começou", "time": 999 },
+
+          { "text": "E ao entrar pelas portas do céu O verei", "time": 999 },
+          { "text": "Correrei pra abraçá-lo e então cantarei", "time": 999 },
+
+          { "text": "Digno, é o Cordeiro bendito", "time": 999 },
+          { "text": "Digno, toda honra e glória a Ti", "time": 999 },
+          { "text": "Tanto esperei por este momento", "time": 999 },
+
+          { "text": "Digno, o conflito encerrado está", "time": 999 },
+          { "text": "Digno, em Teus braços achei meu lugar", "time": 999 },
+          { "text": "Pra sempre irei Te adorar, digno", "time": 999 },
+
+          { "text": "Logo da terra se levantarão", "time": 999 },
+          { "text": "Os que dormem o sono dos justos", "time": 999 },
+          { "text": "A eternidade ali começou", "time": 999 },
+
+          { "text": "E ao entrar pelas portas do céu O verei", "time": 999 },
+          { "text": "Correrei pra abraçá-lo e então cantarei", "time": 999 },
+
+          { "text": "Digno, é o Cordeiro bendito", "time": 999 },
+          { "text": "Digno, toda honra e glória a Ti", "time": 999 },
+          { "text": "Tanto esperei por este momento", "time": 999 },
+
+          { "text": "Digno, o conflito encerrado está", "time": 999 },
+          { "text": "Digno, em Teus braços achei meu lugar", "time": 999 },
+          { "text": "Pra sempre irei Te adorar, digno", "time": 999 },
+
+          { "text": "Cantaremos aleluia, cantaremos aleluia", "time": 999 },
+          {
+            "text": "Cantaremos aleluia (aleluia, aleluia, aleluia, aleluia)",
+            "time": 999
+          },
+          {
+            "text": "Cantaremos aleluia (aleluia, aleluia, aleluia, aleluia)",
+            "time": 999
+          },
+          {
+            "text": "Cantaremos aleluia (aleluia, aleluia, aleluia, aleluia)",
+            "time": 999
+          },
+          { "text": "Cantaremos (aleluia, aleluia)", "time": 999 },
+          { "text": "Nós cantaremos", "time": 999 },
+
+          { "text": "Digno, é o Cordeiro bendito", "time": 999 },
+          { "text": "Digno, toda honra e glória a Ti", "time": 999 },
+          { "text": "Tanto esperei por este momento", "time": 999 },
+
+          { "text": "Digno, o conflito encerrado está", "time": 999 },
+          { "text": "Digno, em Teus braços achei meu lugar", "time": 999 },
+          { "text": "Pra sempre irei Te adorar, digno", "time": 999 },
+
+          { "text": "Aleluia, aleluia, aleluia, digno", "time": 999 },
+          { "text": "Aleluia, aleluia, aleluia, digno", "time": 999 }
+        ]
       }
     },
     {
       "id": 6,
       "title": "Intensamente",
-      "author": "",
+      "author": "Adoradores Novo Tempo",
       "musicPath": "/songs/intensamente",
       "imageUrl": "/images/logo-fundo.webp",
       "lyrics": {
-        "lines": []
+        "lines": [
+          { "text": "Por tanto tempo vivi como escravo", "time": 999 },
+          { "text": "Dos meus desejos e medos", "time": 999 },
+          {
+            "text": "Até que eu entendi, que Cristo é tudo pra mim",
+            "time": 999
+          },
+          { "text": "Só Nele sou completo e restaurado", "time": 999 },
+
+          { "text": "Eu fui comprado pelo Sangue do Cordeiro", "time": 999 },
+          { "text": "Amor tão genuíno, amor tão verdadeiro", "time": 999 },
+          {
+            "text": "Se entregar levando a culpa que não era Sua",
+            "time": 999
+          },
+          { "text": "Só por me amar intensamente", "time": 999 },
+
+          { "text": "Eu fui comprado pelo Rei do Universo", "time": 999 },
+          { "text": "Que enviou Seu Filho pra viver mais perto", "time": 999 },
+          { "text": "E me mostrar o rumo, o caminho para casa", "time": 999 },
+          { "text": "Só por me amar intensamente", "time": 999 },
+
+          { "text": "Por tanto tempo vivi dependente", "time": 999 },
+          { "text": "Da aprovação de pessoas", "time": 999 },
+          {
+            "text": "Até que eu entendi, o que Jesus fez por mim",
+            "time": 999
+          },
+          { "text": "O meu valor foi estimado na cruz", "time": 999 },
+
+          { "text": "Eu fui comprado pelo Sangue do Cordeiro", "time": 999 },
+          { "text": "Amor tão genuíno, amor tão verdadeiro", "time": 999 },
+          {
+            "text": "Se entregar levando a culpa que não era Sua",
+            "time": 999
+          },
+          { "text": "Só por me amar intensamente", "time": 999 },
+
+          { "text": "Eu fui comprado pelo Rei do Universo", "time": 999 },
+          { "text": "Que enviou Seu Filho pra viver mais perto", "time": 999 },
+          { "text": "E me mostrar o rumo, o caminho para casa", "time": 999 },
+          { "text": "Só por me amar intensamente", "time": 999 },
+
+          { "text": "Na cruz entendo o Teu amor", "time": 999 },
+          { "text": "Na cruz recebo o meu valor", "time": 999 },
+          {
+            "text": "Na cruz encontro o caminho para a eternidade",
+            "time": 999
+          },
+
+          { "text": "Na cruz entendo o Teu amor", "time": 999 },
+          { "text": "Na cruz recebo o meu valor", "time": 999 },
+          {
+            "text": "Na cruz encontro o caminho para a eternidade",
+            "time": 999
+          },
+
+          { "text": "Eu fui comprado pelo Sangue do Cordeiro", "time": 999 },
+          { "text": "Amor tão genuíno, amor tão verdadeiro", "time": 999 },
+          {
+            "text": "Se entregar levando a culpa que não era Sua",
+            "time": 999
+          },
+          { "text": "Só por me amar intensamente", "time": 999 },
+
+          { "text": "Eu fui comprado pelo Rei do Universo", "time": 999 },
+          { "text": "Que enviou Seu Filho pra viver mais perto", "time": 999 },
+          { "text": "E me mostrar o rumo, o caminho para casa", "time": 999 },
+          { "text": "Só por me amar intensamente", "time": 999 },
+
+          { "text": "Me mostrar o rumo, o caminho para casa", "time": 999 },
+          { "text": "Só por me amar intensamente", "time": 999 }
+        ]
       }
     },
     {
-      "id": 5,
-      "title": "Santo Espirito",
-      "author": "",
+      "id": 7,
+      "title": "Santo Espírito",
+      "author": "Adoradores Novo Tempo",
       "musicPath": "/songs/santo-espirito",
       "imageUrl": "/images/logo-fundo.webp",
       "lyrics": {
-        "lines": []
+        "lines": [
+          { "text": "Nos pedimos Tua presença entre nós", "time": 999 },
+          { "text": "Santo Espírito de luz", "time": 999 },
+          { "text": "Vem restaura em nós o Teu fogo abrasador", "time": 999 },
+          { "text": "Nos trazendo até Jesus", "time": 999 },
+
+          { "text": "Santo Espírito enche este lugar", "time": 999 },
+          { "text": "Enche este lugar, vive em nós", "time": 999 },
+
+          { "text": "Nos pedimos Tua presença entre nós", "time": 999 },
+          { "text": "Santo Espírito de luz", "time": 999 },
+          { "text": "Vem restaura em nós o Teu fogo abrasador", "time": 999 },
+          { "text": "Nos trazendo até Jesus", "time": 999 },
+
+          { "text": "Santo Espírito enche este lugar", "time": 999 },
+          { "text": "Enche este lugar, vive em nós", "time": 999 },
+
+          { "text": "Vem a nós o Teu reino", "time": 999 },
+          { "text": "Seja feito o Teu querer", "time": 999 },
+          { "text": "Tua unção, Tua bênção", "time": 999 },
+          { "text": "Nós queremos receber", "time": 999 },
+
+          { "text": "Santo Espírito enche este lugar", "time": 999 },
+          { "text": "Enche este lugar, vive em nós", "time": 999 },
+
+          { "text": "Santo Espírito, enche este lugar", "time": 999 },
+          { "text": "Enche este lugar, vive em nós", "time": 999 }
+        ]
       }
     }
   ]
