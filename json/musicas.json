@@ -2,6 +2,7 @@
   "songs": [
     {
       "id": 1,
+      "status": "active",
       "title": "Nosso Deus",
       "author": "Chris Tomlin",
       "musicPath": "/songs/nosso-deus",
@@ -67,6 +68,7 @@
     },
     {
       "id": 2,
+      "status": "active",
       "title": "Uma Geração",
       "author": "Nova Voz",
       "musicPath": "/songs/uma-geracao",
@@ -139,6 +141,7 @@
     },
     {
       "id": 3,
+      "status": "active",
       "title": "Eu Confio em Ti",
       "author": "Eliabe Ventura e Jean Robson",
       "musicPath": "/songs/eu-confio-em-ti",
@@ -222,52 +225,125 @@
     },
     {
       "id": 4,
+      "status": "active",
       "title": "Venha Entregar",
       "author": "David Crowder",
       "musicPath": "/songs/venha-entregar",
       "imageUrl": "/images/logo-fundo.webp",
       "lyrics": {
         "lines": [
-          { "text": "Deixe a tristeza ficar para trás", "time": 12 },
-          { "text": "O quebrantado alívio terá", "time": 17 },
-          { "text": "Diante da graça se deixe cair", "time": 22 },
-          { "text": "Pranto algum pode ao Céu resistir", "time": 27 },
+          {
+            "text": "Deixe a tristeza ficar para trás",
+            "time": 12,
+            "isSolo": true
+          },
+          { "text": "O quebrantado alívio terá", "time": 17, "isSolo": true },
+          {
+            "text": "Diante da graça se deixe cair",
+            "time": 22,
+            "isSolo": true
+          },
+          {
+            "text": "Pranto algum pode ao Céu resistir",
+            "time": 27,
+            "isSolo": true
+          },
 
           { "text": "Deixe seu fardo, deixe o temor", "time": 34 },
           { "text": "Em meio às dores erga o olhar", "time": 45 },
           { "text": "E volte pra casa, perto ela está", "time": 55 },
           { "text": "O seu coração como estiver,", "time": 65 },
-          { "text": "Venha entregar", "time": 70 },
+
+          { "text": "Venha entregar", "time": 70, "isSolo": true },
+          { "text": "Entregar", "time": 71.5 },
 
           { "text": "Existe esperança pra quem longe foi", "time": 82 },
-          { "text": "Sua graça alcança ao pecador", "time": 87 },
-          { "text": "Alívio ao cansado e paz eternal", "time": 92 },
+          { "text": "Sua graça alcança", "time": 87 },
+          { "text": "Ao pecador", "time": 90, "isSolo": true },
+          {
+            "text": "Alívio ao cansado e paz eternal",
+            "time": 92,
+            "isSolo": true
+          },
+          { "text": "Uh uh uh", "time": 92 },
           { "text": "Não há no mundo promessa maior", "time": 97 },
 
-          { "text": "Deixe seu fardo, deixe o temor", "time": 107 },
-          { "text": "Em meio às dores erga o olhar", "time": 115 },
-          { "text": "E, volte pra casa, perto ela está", "time": 125 },
+          { "text": "Deixe seu", "time": 105, "isSolo": true },
+          { "text": "Fardo", "time": 106.5 },
+          { "text": "Deixe o temor", "time": 110, "isSolo": true },
+
+          { "text": "Em meio às dores", "time": 115 },
+          { "text": "Erga o olhar", "time": 120, "isSolo": true },
+          { "text": "O olhar", "time": 121 },
+
+          {
+            "text": "E, volte pra casa",
+            "time": 125,
+            "isSolo": true
+          },
+          { "text": "casa,", "time": 127 },
+          { "text": "perto ela está", "time": 130, "isSolo": true },
+
           { "text": "O seu coração como estiver,", "time": 135 },
-          { "text": "Venha entregar", "time": 141 },
-          { "text": "Tal como está", "time": 148 },
-          { "text": "Nos braços do pai", "time": 151 },
-          { "text": "O seu coração", "time": 156 },
 
-          { "text": "O sol logo nasce, não perca a fé", "time": 174 },
-          { "text": "Pranto algum pode ao Céu resistir", "time": 177 },
-          { "text": "Pranto algum pode ao Céu resistir", "time": 185 },
+          { "text": "Venha entregar", "time": 141, "isSolo": true },
+          { "text": "Ah ah ah", "time": 142 },
 
-          { "text": "Deixe seu fardo, deixe o temor", "time": 190 },
-          { "text": "Em meio às dores erga o olhar", "time": 190 },
-          { "text": "E, volte pra casa, perto ela está", "time": 200 },
-          { "text": "O seu coração como estiver,", "time": 212 },
-          { "text": "Venha entregar", "time": 225 },
-          { "text": "Venha entregar", "time": 240 }
+          { "text": "Tal como está", "time": 146, "isSolo": true },
+
+          { "text": "Nos braços do pai", "time": 150, "isSolo": true },
+          { "text": "braços do pai", "time": 150.5 },
+          { "text": "O seu coração", "time": 156, "isSolo": true },
+
+          {
+            "text": "O sol logo nasce, não perca a fé",
+            "time": 163,
+            "isSolo": true
+          },
+          {
+            "text": "Pranto algum pode ao Céu resistir",
+            "time": 167,
+            "isSolo": true
+          },
+          {
+            "text": "Pranto algum pode ao Céu resistir",
+            "time": 172,
+            "isSolo": true
+          },
+
+          {
+            "text": "Deixe seu",
+            "time": 181,
+            "isSolo": true
+          },
+          { "text": "Fardo", "time": 181.5 },
+          { "text": "Deixe o temor", "time": 185, "isSolo": true },
+
+          { "text": "Em meio às dores", "time": 190 },
+          { "text": "Erga o olhar", "time": 195, "isSolo": true },
+          { "text": "O olhar", "time": 196 },
+          {
+            "text": "E, volte pra casa",
+            "time": 200,
+            "isSolo": true
+          },
+          { "text": "casa", "time": 201 },
+          {
+            "text": "Perto ela está",
+            "time": 206,
+            "isSolo": true
+          },
+
+          { "text": "O seu coração como estiver,", "time": 210 },
+          { "text": "Venha entregar", "time": 215, "isSolo": true },
+          { "text": "Entregar", "time": 216 },
+          { "text": "Venha entregar", "time": 225 }
         ]
       }
     },
     {
       "id": 5,
+      "status": "inactive",
       "title": "Digno",
       "author": "Adoradores Novo Tempo",
       "musicPath": "/songs/digno",
@@ -339,6 +415,7 @@
     },
     {
       "id": 6,
+      "status": "inactive",
       "title": "Intensamente",
       "author": "Adoradores Novo Tempo",
       "musicPath": "/songs/intensamente",
@@ -421,6 +498,7 @@
     },
     {
       "id": 7,
+      "status": "inactive",
       "title": "Santo Espírito",
       "author": "Adoradores Novo Tempo",
       "musicPath": "/songs/santo-espirito",

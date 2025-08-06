@@ -1,4 +1,4 @@
-import { Lyrics } from "@/types";
+import { Lines, Lyrics } from "@/types";
 import { useEffect, useRef } from "react";
 
 type TextReaderProps = {
@@ -19,6 +19,31 @@ function TextReader({
   fontSize,
 }: TextReaderProps) {
   const activeLineRef = useRef<HTMLParagraphElement | null>(null);
+
+  function getLineStyle(line: Lines, isActive: boolean, fontSize: number) {
+    const size = line.isSolo ? fontSize * 0.75 : fontSize;
+    return { fontSize: `${size}px` };
+  }
+
+  function getLineClass({
+    enableReading,
+    isActive,
+    isPastLine,
+    isSolo,
+  }: {
+    enableReading: boolean;
+    isActive: boolean;
+    isPastLine: boolean;
+    isSolo?: boolean;
+  }) {
+    if (!enableReading) return "text-gray-200";
+
+    if (isSolo) return isActive ? "text-white" : "opacity-75";
+
+    if (isActive) return "font-bold text-primary";
+    if (isPastLine) return "text-gray-200";
+    return "text-gray-500";
+  }
 
   useEffect(() => {
     if (enableReading && activeLineRef.current) {
@@ -55,18 +80,15 @@ function TextReader({
               key={index}
               ref={isActive ? activeLineRef : null}
               onClick={() => updateCurrentTime(line.time)}
-              style={{ fontSize: `${fontSize}px` }}
-              className={`transition-all duration-400 ${
-                !enableReading
-                  ? "text-gray-200"
-                  : isActive
-                    ? "font-bold text-primary"
-                    : isPastLine
-                      ? "text-gray-200"
-                      : "text-gray-500"
-              }`}
+              style={getLineStyle(line, isActive, fontSize)}
+              className={`transition-all duration-400 ${getLineClass({
+                enableReading,
+                isActive,
+                isPastLine,
+                isSolo: line.isSolo,
+              })}`}
             >
-              {line.text}
+              {line.isSolo ? `(${line.text})` : line.text}
             </p>
           );
         })}

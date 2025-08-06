@@ -1,6 +1,7 @@
 export interface Lines {
   text: string;
   time: number;
+  isSolo?: boolean;
 }
 
 export interface Lyrics {
@@ -20,11 +21,17 @@ export interface Agenda {
 
 export interface Song {
   id: number;
+  status: Status;
   title: string;
   author: string;
   musicPath: string;
   imageUrl: string;
   lyrics: Lyrics;
+}
+
+export enum Status {
+  active = "active",
+  inactive = "inactive",
 }
 
 export enum Naipes {

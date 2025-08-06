@@ -1,7 +1,7 @@
 import path from "path";
 import { promises as fs } from "fs";
 import { NextApiRequest, NextApiResponse } from "next";
-import { Song } from "@/types";
+import { Song, Status } from "@/types";
 
 export default async function handler(
   req: NextApiRequest,
@@ -14,9 +14,12 @@ export default async function handler(
       "utf8",
     );
 
-    const musicas = JSON.parse(fileContent).songs;
+    const musicas: Song[] = JSON.parse(fileContent).songs;
 
-    return res.status(200).json(musicas);
+    const activeSongs = musicas.filter((song) => song.status == Status.active);
+    console.log(musicas);
+    console.log(activeSongs);
+    return res.status(200).json(activeSongs);
   } catch (error) {
     return res
       .status(500)
