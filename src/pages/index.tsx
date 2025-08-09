@@ -1,5 +1,25 @@
 import Layout from "@/components/Layout";
+import {
+  InstagramLogo,
+  WhatsappLogo,
+  YoutubeLogo,
+} from "@phosphor-icons/react";
 import Link from "next/link";
+
+const socialMediaLinks = [
+  {
+    icon: YoutubeLogo,
+    link: "https://www.youtube.com/@coraljovemdelondrina",
+  },
+  {
+    icon: InstagramLogo,
+    link: "https://www.instagram.com/coraljovemdelondrina/",
+  },
+  {
+    icon: WhatsappLogo,
+    link: "https://wa.me/5543991956641?text=Olá%2C%20gostaria%20de%20falar%20com%20o%20Coral%20Jovem%20de%20Londrina",
+  },
+];
 
 export default function Home() {
   return (
@@ -19,14 +39,13 @@ export default function Home() {
               Kits de Voz
             </button>
           </Link>
-          <Link
-            href="https://wa.me/5543991956641?text=Olá%2C%20gostaria%20de%20falar%20com%20o%20Coral%20Jovem%20de%20Londrina"
-            target="__blank"
-          >
-            <button className="bg-secondary hover:bg-secondary text-white py-2 px-8 w-full md:w-max rounded-full">
-              Contato
-            </button>
-          </Link>
+          {socialMediaLinks.map((socialMedia, index) => (
+            <Link key={index} href={socialMedia.link} target="__blank">
+              <button className="bg-secondary hover:bg-secondary text-white py-2 px-4 w-full md:w-max rounded-full">
+                <socialMedia.icon size={24} />
+              </button>
+            </Link>
+          ))}
         </div>
       </div>
     </Layout>
