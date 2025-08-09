@@ -1,6 +1,7 @@
 export interface Lines {
   text: string;
   time: number;
+  isSolo?: boolean;
 }
 
 export interface Lyrics {
@@ -8,7 +9,7 @@ export interface Lyrics {
 }
 
 export interface Event {
-  id: number;
+  id: string;
   date: string;
   title: string;
   location: string;
@@ -19,7 +20,7 @@ export interface Agenda {
 }
 
 export interface Song {
-  id: number;
+  id: string;
   title: string;
   author: string;
   musicPath: string;
