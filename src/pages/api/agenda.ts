@@ -8,7 +8,6 @@ export default async function handler(
   res: NextApiResponse<Agenda | { error: string }>,
 ) {
   try {
-    console.log(formatDate(new Date().toISOString()));
     const data = await prisma.schedule.findMany({
       where: {
         date: {
