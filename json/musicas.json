@@ -865,7 +865,7 @@
     },
     {
       "id": 10,
-      "status": "active",
+      "status": "inactive",
       "title": "Canção do Apocalipse",
       "author": "Nova Semente",
       "musicPath": "/songs/cancao-do-apocalipse",
