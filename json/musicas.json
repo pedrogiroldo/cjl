@@ -1051,7 +1051,7 @@
       "lyrics": {
         "lines": [
           {
-            "text": "INTRO",
+            "text": "♪",
             "time": 0,
             "isSolo": false
           },
@@ -1067,32 +1067,32 @@
           },
           {
             "text": "Como vento a soprar, Senhor",
-            "time": 28,
+            "time": 27,
             "isSolo": false
           },
           {
             "text": "Guia nosso caminhar",
-            "time": 33,
+            "time": 32,
             "isSolo": false
           },
           {
             "text": "Vem a nós",
-            "time": 39,
+            "time": 38,
             "isSolo": false
           },
           {
             "text": "Purifica nosso ser, Senhor",
-            "time": 43,
+            "time": 40,
             "isSolo": false
           },
           {
             "text": "Como o fogo do amor",
-            "time": 48,
+            "time": 45,
             "isSolo": false
           },
           {
             "text": "Sopra em nós Santo Espirito de Deus",
-            "time": 52,
+            "time": 51,
             "isSolo": false
           },
           {
@@ -1102,7 +1102,7 @@
           },
           {
             "text": "Nos faça enxergar",
-            "time": 59,
+            "time": 58,
             "isSolo": false
           },
           {
@@ -1127,17 +1127,17 @@
           },
           {
             "text": "E transforma essa canção em louvor",
-            "time": 70,
+            "time": 69,
             "isSolo": false
           },
           {
             "text": "MULHERES",
-            "time": 73,
+            "time": 72,
             "isSolo": false
           },
           {
             "text": "Em louvor, em louvor",
-            "time": 73,
+            "time": 72,
             "isSolo": false
           },
           {
@@ -1152,17 +1152,17 @@
           },
           {
             "text": "TODOS",
-            "time": 81,
+            "time": 80,
             "isSolo": false
           },
           {
             "text": "No poder, na luz",
-            "time": 81,
+            "time": 80,
             "isSolo": false
           },
           {
-            "text": "Que ilumina Sua a cruz, ",
-            "time": 84,
+            "text": "Que ilumina Sua a cruz,",
+            "time": 83,
             "isSolo": false
           },
           {
@@ -1172,12 +1172,12 @@
           },
           {
             "text": "à promessa aqui deixada por Jesus",
-            "time": 93,
+            "time": 89,
             "isSolo": false
           },
           {
             "text": "Dá-nos outro",
-            "time": 95,
+            "time": 94,
             "isSolo": false
           },
           {
@@ -1187,12 +1187,12 @@
           },
           {
             "text": "Vem a nós",
-            "time": 112,
+            "time": 114,
             "isSolo": false
           },
           {
             "text": "Toma nossa frágil mão, Senhor",
-            "time": 118,
+            "time": 117,
             "isSolo": false
           },
           {
@@ -1207,7 +1207,7 @@
           },
           {
             "text": "Toma o nosso coração, Senhor",
-            "time": 130,
+            "time": 129,
             "isSolo": false
           },
           {
@@ -1217,7 +1217,7 @@
           },
           {
             "text": "Nos toma hoje em tuas mãos",
-            "time": 140,
+            "time": 139,
             "isSolo": false
           },
           {
@@ -1242,136 +1242,136 @@
           },
           {
             "text": "Sem ver nós queremos crer",
-            "time": 157,
-            "isSolo": false
-          },
-          {
-            "text": "No poder, na luz",
-            "time": 160,
-            "isSolo": false
-          },
-          {
-            "text": "Que ilumina Sua cruz",
             "time": 166,
             "isSolo": false
           },
           {
+            "text": "No poder, na luz",
+            "time": 171,
+            "isSolo": false
+          },
+          {
+            "text": "Que ilumina Sua cruz",
+            "time": 175,
+            "isSolo": false
+          },
+          {
             "text": "Que nos guia a promessa",
-            "time": 169,
+            "time": 179,
             "isSolo": false
           },
           {
             "text": "Aqui deixada por Jesus",
-            "time": 173,
-            "isSolo": false
-          },
-          {
-            "text": "MULHERES",
-            "time": 176,
-            "isSolo": false
-          },
-          {
-            "text": "Dá-nos",
-            "time": 176,
-            "isSolo": false
-          },
-          {
-            "text": "HOMENS",
-            "time": 177,
-            "isSolo": false
-          },
-          {
-            "text": "Dá-nos",
-            "time": 177,
-            "isSolo": false
-          },
-          {
-            "text": "MULHERES",
-            "time": 179,
-            "isSolo": false
-          },
-          {
-            "text": "Outro",
-            "time": 179,
-            "isSolo": false
-          },
-          {
-            "text": "HOMENS ",
-            "time": 179,
-            "isSolo": false
-          },
-          {
-            "text": "Outro",
-            "time": 179,
-            "isSolo": false
-          },
-          {
-            "text": "TODOS",
-            "time": 180,
-            "isSolo": false
-          },
-          {
-            "text": "Consolador",
-            "time": 180,
-            "isSolo": false
-          },
-          {
-            "text": "MULHERES",
             "time": 182,
             "isSolo": false
           },
           {
+            "text": "MULHERES",
+            "time": 185,
+            "isSolo": false
+          },
+          {
             "text": "Dá-nos",
-            "time": 182,
+            "time": 185,
             "isSolo": false
           },
           {
             "text": "HOMENS",
-            "time": 183,
+            "time": 187,
             "isSolo": false
           },
           {
             "text": "Dá-nos",
-            "time": 183,
+            "time": 187,
             "isSolo": false
           },
           {
             "text": "MULHERES",
-            "time": 184,
+            "time": 188,
             "isSolo": false
           },
           {
             "text": "Outro",
-            "time": 184,
+            "time": 188,
             "isSolo": false
           },
           {
             "text": "HOMENS ",
-            "time": 185,
+            "time": 189,
             "isSolo": false
           },
           {
             "text": "Outro",
-            "time": 185,
+            "time": 189,
             "isSolo": false
           },
           {
             "text": "TODOS",
-            "time": 186,
+            "time": 190,
             "isSolo": false
           },
           {
             "text": "Consolador",
-            "time": 186,
+            "time": 190,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 192,
+            "isSolo": false
+          },
+          {
+            "text": "Dá-nos",
+            "time": 192,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 193,
+            "isSolo": false
+          },
+          {
+            "text": "Dá-nos",
+            "time": 193,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 194,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 194,
             "isSolo": false
           },
           {
             "text": "HOMENS ",
+            "time": 195,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 195,
+            "isSolo": false
+          },
+          {
+            "text": "TODOS",
+            "time": 196,
+            "isSolo": false
+          },
+          {
+            "text": "Consolador",
+            "time": 196,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
             "time": 204,
             "isSolo": false
           },
           {
-            "text": "Ó Senhor nós aguardamos ",
+            "text": "Ó Senhor nós aguardamos",
             "time": 204,
             "isSolo": false
           },
@@ -1497,17 +1497,67 @@
           },
           {
             "text": "à promessa aqui deixada por Jesus",
-            "time": 284,
+            "time": 282,
             "isSolo": false
           },
           {
             "text": "MULHERES",
+            "time": 287,
+            "isSolo": false
+          },
+          {
+            "text": "Dá-nos",
+            "time": 287,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
             "time": 288,
             "isSolo": false
           },
           {
             "text": "Dá-nos",
+            "time": 288,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 289,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 289,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 290,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 290,
+            "isSolo": false
+          },
+          {
+            "text": "TODOS",
             "time": 291,
+            "isSolo": false
+          },
+          {
+            "text": "Consolador",
+            "time": 291,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 293,
+            "isSolo": false
+          },
+          {
+            "text": "Dá-nos",
+            "time": 293,
             "isSolo": false
           },
           {
@@ -1517,137 +1567,168 @@
           },
           {
             "text": "Dá-nos",
+            "time": 294,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 295,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 295,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 296,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 296,
+            "isSolo": false
+          },
+          {
+            "text": "TODOS",
             "time": 297,
             "isSolo": false
           },
           {
+            "text": "Consolador",
+            "time": 297,
+            "isSolo": false
+          },
+
+          {
             "text": "MULHERES",
+            "time": 299,
+            "isSolo": false
+          },
+          {
+            "text": "Dá-nos",
+            "time": 299,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
             "time": 300,
             "isSolo": false
           },
           {
+            "text": "Dá-nos",
+            "time": 300,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 301,
+            "isSolo": false
+          },
+          {
             "text": "Outro",
+            "time": 301,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 302,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 302,
+            "isSolo": false
+          },
+          {
+            "text": "TODOS",
             "time": 303,
             "isSolo": false
           },
           {
-            "text": "HOMENS",
-            "time": 306,
+            "text": "Consolador",
+            "time": 303,
             "isSolo": false
           },
           {
-            "text": "Outro",
-            "time": 309,
-            "isSolo": false
-          },
-          {
-            "text": "TODOS",
+            "text": "MULHERES",
             "time": 312,
             "isSolo": false
           },
           {
-            "text": "Consolador",
+            "text": "Vem a nós",
+            "time": 312,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 313,
+            "isSolo": false
+          },
+          {
+            "text": "Vem a nós",
+            "time": 313,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
             "time": 315,
             "isSolo": false
           },
           {
-            "text": "MULHERES",
-            "time": 318,
-            "isSolo": false
-          },
-          {
-            "text": "Dá-nos",
-            "time": 321,
+            "text": "Vem a nós",
+            "time": 315,
             "isSolo": false
           },
           {
             "text": "HOMENS",
-            "time": 324,
+            "time": 317,
             "isSolo": false
           },
           {
-            "text": "Dá-nos",
+            "text": "Vem a nós",
+            "time": 317,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 319,
+            "isSolo": false
+          },
+          {
+            "text": "Vem a nós",
+            "time": 319,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 322,
+            "isSolo": false
+          },
+          {
+            "text": "Vem a nós",
+            "time": 322,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 325,
+            "isSolo": false
+          },
+          {
+            "text": "Vem a nós",
+            "time": 325,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
             "time": 327,
             "isSolo": false
           },
           {
-            "text": "MULHERES",
-            "time": 330,
-            "isSolo": false
-          },
-          {
-            "text": "Outro",
-            "time": 333,
-            "isSolo": false
-          },
-          {
-            "text": "MULHERES",
-            "time": 336,
-            "isSolo": false
-          },
-          {
-            "text": "Outro",
-            "time": 339,
-            "isSolo": false
-          },
-          {
-            "text": "TODOS",
-            "time": 342,
-            "isSolo": false
-          },
-          {
-            "text": "Consolador",
-            "time": 345,
-            "isSolo": false
-          },
-          {
-            "text": "MULHERES",
-            "time": 348,
-            "isSolo": false
-          },
-          {
             "text": "Vem a nós",
-            "time": 351,
-            "isSolo": false
-          },
-          {
-            "text": "HOMENS",
-            "time": 354,
-            "isSolo": false
-          },
-          {
-            "text": "Vem a nós",
-            "time": 357,
-            "isSolo": false
-          },
-          {
-            "text": "MULHERES",
-            "time": 360,
-            "isSolo": false
-          },
-          {
-            "text": "Vem a nós",
-            "time": 363,
-            "isSolo": false
-          },
-          {
-            "text": "HOMENS",
-            "time": 366,
-            "isSolo": false
-          },
-          {
-            "text": "Vem a nós",
-            "time": 369,
-            "isSolo": false
-          },
-          {
-            "text": "TODOS",
-            "time": 372,
-            "isSolo": false
-          },
-          {
-            "text": "Vem a nós",
-            "time": 375,
+            "time": 327,
             "isSolo": false
           }
         ]
