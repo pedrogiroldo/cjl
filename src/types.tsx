@@ -9,7 +9,7 @@ export interface Lyrics {
 }
 
 export interface Event {
-  id: number;
+  id: string;
   date: string;
   title: string;
   location: string;
@@ -20,7 +20,7 @@ export interface Agenda {
 }
 
 export interface Song {
-  id: number;
+  id: string;
   status: Status;
   title: string;
   author: string;

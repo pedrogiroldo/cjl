@@ -31,7 +31,7 @@ export default function Musica() {
   const [, copyToClipboard] = useCopyToClipboard();
 
   const voice = params?.voz ?? "";
-  const songId = Number(params?.musica ?? "");
+  const songId = (params?.musica ?? "").toString();
 
   const songPath = `${song?.musicPath}/${voice}.mp3`;
 

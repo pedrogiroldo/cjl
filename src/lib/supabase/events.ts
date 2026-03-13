@@ -15,6 +15,17 @@ export async function getEvents(): Promise<Event[]> {
   return data || [];
 }
 
+export async function getUpcomingEvents(fromDate: string): Promise<Event[]> {
+  const { data, error } = await supabase
+    .from("events")
+    .select("*")
+    .gte("date", fromDate)
+    .order("date", { ascending: true });
+
+  if (error) throw error;
+  return data || [];
+}
+
 export async function getEventById(id: string): Promise<Event | null> {
   const { data, error } = await supabase
     .from("events")
