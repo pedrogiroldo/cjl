@@ -201,6 +201,8 @@ supabase migration list
 
 # Push migrations to remote
 supabase db push
+
+**Always create new migration files with `supabase migration new <name>` and then edit the generated SQL file.**
 ```
 
 ### Declarative Schema Migrations (Recommended)
