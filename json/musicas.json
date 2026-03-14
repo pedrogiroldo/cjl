@@ -865,7 +865,7 @@
     },
     {
       "id": 10,
-      "status": "active",
+      "status": "inactive",
       "title": "Canção do Apocalipse",
       "author": "Nova Semente",
       "musicPath": "/songs/cancao-do-apocalipse",
@@ -998,7 +998,7 @@
     },
     {
       "id": 12,
-      "status": "active",
+      "status": "inactive",
       "title": "Natal, Feliz Natal",
       "author": "",
       "musicPath": "/songs/natal-feliz-natal",
@@ -1038,6 +1038,699 @@
           { "text": "Natal, Natal!", "time": 999 },
           { "text": "Eis que nasceu", "time": 999 },
           { "text": "Nosso Rei divinal!", "time": 999 }
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "status": "active",
+      "title": "Vem a Nós",
+      "author": "Coral Jovem do Unasp",
+      "musicPath": "/songs/vem-a-nos",
+      "imageUrl": "/images/logo-fundo.webp",
+      "lyrics": {
+        "lines": [
+          {
+            "text": "♪",
+            "time": 0,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 25,
+            "isSolo": false
+          },
+          {
+            "text": "Vem a nós",
+            "time": 25,
+            "isSolo": false
+          },
+          {
+            "text": "Como vento a soprar, Senhor",
+            "time": 27,
+            "isSolo": false
+          },
+          {
+            "text": "Guia nosso caminhar",
+            "time": 32,
+            "isSolo": false
+          },
+          {
+            "text": "Vem a nós",
+            "time": 38,
+            "isSolo": false
+          },
+          {
+            "text": "Purifica nosso ser, Senhor",
+            "time": 40,
+            "isSolo": false
+          },
+          {
+            "text": "Como o fogo do amor",
+            "time": 45,
+            "isSolo": false
+          },
+          {
+            "text": "Sopra em nós Santo Espirito de Deus",
+            "time": 51,
+            "isSolo": false
+          },
+          {
+            "text": "E assim",
+            "time": 56,
+            "isSolo": false
+          },
+          {
+            "text": "Nos faça enxergar",
+            "time": 58,
+            "isSolo": false
+          },
+          {
+            "text": "Habita em nós, Senhor",
+            "time": 62,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 67,
+            "isSolo": false
+          },
+          {
+            "text": "Senhor",
+            "time": 67,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 67,
+            "isSolo": false
+          },
+          {
+            "text": "E transforma essa canção em louvor",
+            "time": 69,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 72,
+            "isSolo": false
+          },
+          {
+            "text": "Em louvor, em louvor",
+            "time": 72,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 75,
+            "isSolo": false
+          },
+          {
+            "text": "Sem ver nós queremos crer",
+            "time": 75,
+            "isSolo": false
+          },
+          {
+            "text": "TODOS",
+            "time": 80,
+            "isSolo": false
+          },
+          {
+            "text": "No poder, na luz",
+            "time": 80,
+            "isSolo": false
+          },
+          {
+            "text": "Que ilumina Sua a cruz,",
+            "time": 83,
+            "isSolo": false
+          },
+          {
+            "text": "Que nos guia",
+            "time": 87,
+            "isSolo": false
+          },
+          {
+            "text": "à promessa aqui deixada por Jesus",
+            "time": 89,
+            "isSolo": false
+          },
+          {
+            "text": "Dá-nos outro",
+            "time": 94,
+            "isSolo": false
+          },
+          {
+            "text": "Consolador",
+            "time": 98,
+            "isSolo": false
+          },
+          {
+            "text": "Vem a nós",
+            "time": 114,
+            "isSolo": false
+          },
+          {
+            "text": "Toma nossa frágil mão, Senhor",
+            "time": 117,
+            "isSolo": false
+          },
+          {
+            "text": "E nos usa em Teu favor",
+            "time": 121,
+            "isSolo": false
+          },
+          {
+            "text": "Vem a nós",
+            "time": 127,
+            "isSolo": false
+          },
+          {
+            "text": "Toma o nosso coração, Senhor",
+            "time": 129,
+            "isSolo": false
+          },
+          {
+            "text": "Mesmo em meio a tanta dor",
+            "time": 133,
+            "isSolo": false
+          },
+          {
+            "text": "Nos toma hoje em tuas mãos",
+            "time": 139,
+            "isSolo": false
+          },
+          {
+            "text": "Da-nos vida e missão",
+            "time": 143,
+            "isSolo": false
+          },
+          {
+            "text": "Queremos servir",
+            "time": 146,
+            "isSolo": false
+          },
+          {
+            "text": "Habita em nós, Senhor",
+            "time": 154,
+            "isSolo": false
+          },
+          {
+            "text": "E transforma essa cancão em louvor",
+            "time": 160,
+            "isSolo": false
+          },
+          {
+            "text": "Sem ver nós queremos crer",
+            "time": 166,
+            "isSolo": false
+          },
+          {
+            "text": "No poder, na luz",
+            "time": 171,
+            "isSolo": false
+          },
+          {
+            "text": "Que ilumina Sua cruz",
+            "time": 175,
+            "isSolo": false
+          },
+          {
+            "text": "Que nos guia a promessa",
+            "time": 179,
+            "isSolo": false
+          },
+          {
+            "text": "Aqui deixada por Jesus",
+            "time": 182,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 185,
+            "isSolo": false
+          },
+          {
+            "text": "Dá-nos",
+            "time": 185,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 187,
+            "isSolo": false
+          },
+          {
+            "text": "Dá-nos",
+            "time": 187,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 188,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 188,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS ",
+            "time": 189,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 189,
+            "isSolo": false
+          },
+          {
+            "text": "TODOS",
+            "time": 190,
+            "isSolo": false
+          },
+          {
+            "text": "Consolador",
+            "time": 190,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 192,
+            "isSolo": false
+          },
+          {
+            "text": "Dá-nos",
+            "time": 192,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 193,
+            "isSolo": false
+          },
+          {
+            "text": "Dá-nos",
+            "time": 193,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 194,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 194,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS ",
+            "time": 195,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 195,
+            "isSolo": false
+          },
+          {
+            "text": "TODOS",
+            "time": 196,
+            "isSolo": false
+          },
+          {
+            "text": "Consolador",
+            "time": 196,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 204,
+            "isSolo": false
+          },
+          {
+            "text": "Ó Senhor nós aguardamos",
+            "time": 204,
+            "isSolo": false
+          },
+          {
+            "text": "Teu Espirito e poder",
+            "time": 207,
+            "isSolo": false
+          },
+          {
+            "text": "Que Ele nos mostre nosso erro",
+            "time": 210,
+            "isSolo": false
+          },
+          {
+            "text": "E nos convença a obedecer",
+            "time": 213,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 217,
+            "isSolo": false
+          },
+          {
+            "text": "Ó Senhor nós aguardamos ",
+            "time": 217,
+            "isSolo": false
+          },
+          {
+            "text": "Teu Espirito e poder",
+            "time": 220,
+            "isSolo": false
+          },
+          {
+            "text": "Que Ele nos mostre nosso erro",
+            "time": 223,
+            "isSolo": false
+          },
+          {
+            "text": "E nos convença a obedecer",
+            "time": 226,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 230,
+            "isSolo": false
+          },
+          {
+            "text": "Ó Senhor nós aguardamos ",
+            "time": 230,
+            "isSolo": false
+          },
+          {
+            "text": "Teu Espirito e poder",
+            "time": 233,
+            "isSolo": false
+          },
+          {
+            "text": "Que Ele nos mostre nosso erro",
+            "time": 236,
+            "isSolo": false
+          },
+          {
+            "text": "E nos convença a obedecer",
+            "time": 239,
+            "isSolo": false
+          },
+          {
+            "text": "TODOS",
+            "time": 242,
+            "isSolo": false
+          },
+          {
+            "text": "Ó Senhor nós aguardamos ",
+            "time": 242,
+            "isSolo": false
+          },
+          {
+            "text": "Teu Espirito e poder",
+            "time": 245,
+            "isSolo": false
+          },
+          {
+            "text": "Que Ele nos mostre nosso erro",
+            "time": 248,
+            "isSolo": false
+          },
+          {
+            "text": "E nos convença",
+            "time": 251,
+            "isSolo": false
+          },
+          {
+            "text": "Habita em nós, Senhor",
+            "time": 255,
+            "isSolo": false
+          },
+          {
+            "text": "E transforma essa canção em louvor",
+            "time": 261,
+            "isSolo": false
+          },
+          {
+            "text": "Sem ver nós queremos crer",
+            "time": 268,
+            "isSolo": false
+          },
+          {
+            "text": "No poder, na luz",
+            "time": 272,
+            "isSolo": false
+          },
+          {
+            "text": "Que ilumina a Sua cruz,",
+            "time": 276,
+            "isSolo": false
+          },
+          {
+            "text": "Que nos guia",
+            "time": 280,
+            "isSolo": false
+          },
+          {
+            "text": "à promessa aqui deixada por Jesus",
+            "time": 282,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 287,
+            "isSolo": false
+          },
+          {
+            "text": "Dá-nos",
+            "time": 287,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 288,
+            "isSolo": false
+          },
+          {
+            "text": "Dá-nos",
+            "time": 288,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 289,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 289,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 290,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 290,
+            "isSolo": false
+          },
+          {
+            "text": "TODOS",
+            "time": 291,
+            "isSolo": false
+          },
+          {
+            "text": "Consolador",
+            "time": 291,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 293,
+            "isSolo": false
+          },
+          {
+            "text": "Dá-nos",
+            "time": 293,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 294,
+            "isSolo": false
+          },
+          {
+            "text": "Dá-nos",
+            "time": 294,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 295,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 295,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 296,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 296,
+            "isSolo": false
+          },
+          {
+            "text": "TODOS",
+            "time": 297,
+            "isSolo": false
+          },
+          {
+            "text": "Consolador",
+            "time": 297,
+            "isSolo": false
+          },
+
+          {
+            "text": "MULHERES",
+            "time": 299,
+            "isSolo": false
+          },
+          {
+            "text": "Dá-nos",
+            "time": 299,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 300,
+            "isSolo": false
+          },
+          {
+            "text": "Dá-nos",
+            "time": 300,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 301,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 301,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 302,
+            "isSolo": false
+          },
+          {
+            "text": "Outro",
+            "time": 302,
+            "isSolo": false
+          },
+          {
+            "text": "TODOS",
+            "time": 303,
+            "isSolo": false
+          },
+          {
+            "text": "Consolador",
+            "time": 303,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 312,
+            "isSolo": false
+          },
+          {
+            "text": "Vem a nós",
+            "time": 312,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 313,
+            "isSolo": false
+          },
+          {
+            "text": "Vem a nós",
+            "time": 313,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 315,
+            "isSolo": false
+          },
+          {
+            "text": "Vem a nós",
+            "time": 315,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 317,
+            "isSolo": false
+          },
+          {
+            "text": "Vem a nós",
+            "time": 317,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 319,
+            "isSolo": false
+          },
+          {
+            "text": "Vem a nós",
+            "time": 319,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 322,
+            "isSolo": false
+          },
+          {
+            "text": "Vem a nós",
+            "time": 322,
+            "isSolo": false
+          },
+          {
+            "text": "MULHERES",
+            "time": 325,
+            "isSolo": false
+          },
+          {
+            "text": "Vem a nós",
+            "time": 325,
+            "isSolo": false
+          },
+          {
+            "text": "HOMENS",
+            "time": 327,
+            "isSolo": false
+          },
+          {
+            "text": "Vem a nós",
+            "time": 327,
+            "isSolo": false
+          }
         ]
       }
     }
